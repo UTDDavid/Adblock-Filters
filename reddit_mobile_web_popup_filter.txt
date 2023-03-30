@@ -1,0 +1,44 @@
+! Title: Reddit Mobile Web Popup Filter
+! Expires: 
+! Description: This is to remove the "open in the reddit app" popup when clicking on a reddit link on mobile in the browser
+! Homepage: https://github.com/UTDDavid/Adblock-Filters
+! Last modified: 2023-03-29
+! Version: 1
+
+! modified source: https://www.reddit.com/r/uBlockOrigin/comments/yrtr3r/comment/ivx146u/?utm_source=share&utm_medium=web2x&context=3
+
+! Reddit app ad
+www.reddit.com##.XPromoPopupRpl
+www.reddit.com##xpromo-new-app-selector
+www.reddit.com##.bottom-bar, .XPromoBottomBar
+www.reddit.com##.useApp,.TopNav__promoButton
+www.reddit.com##body:style(pointer-events:auto!important;)
+
+! uBO Annoyances has also this:
+! https://github.com/uBlockOrigin/uAssets/issues/6826
+reddit.com##.XPromoPopup
+reddit.com##body.scroll-disabled:style(overflow: visible!important; position: static!important;)
+reddit.com##.XPromoInFeed
+amp.reddit.com##.AppSelectorModal__body
+amp.reddit.com##.upsell_banner
+
+! 2022-11-11 20:20:47 CET:
+www.reddit.com##xpromo-app-selector
+www.reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
+www.reddit.com##+js(aeld, touchmove)
+
+! 2022-11-12 10:11:02 CET:
+www.reddit.com##.XPromoPopupRplNew
+
+! 2023-03-29:
+www.reddit.com##.XPromoPopup__header
+www.reddit.com##.XPromoPopup__actions
+www.reddit.com##.XPromoPopup
+www.reddit.com##.XPromoPopupRpl__header
+www.reddit.com##.XPromoPopupRpl__actions
+www.reddit.com##.XPromoPopupRpl__footer
+www.reddit.com##.XPromoPopupRpl__actionTitle
+www.reddit.com##.m-animated.XPromoPopupRpl__overlay
+www.reddit.com##+js(rc, scroll-disabled, body, stay)
+www.reddit.com##div.XPromoPopupRpl__action:nth-of-type(1)
+www.reddit.com##div.XPromoPopupRpl__action:nth-of-type(2)
