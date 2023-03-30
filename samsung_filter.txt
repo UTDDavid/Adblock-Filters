@@ -1,0 +1,34 @@
+! Title: Samsung in App Ads
+! Expires: 30 days
+! Description: Removes ads in samsung apps like: healh, weather, game launcher
+! Homepage: https://github.com/UTDDavid/Adblock-Filters
+! Last modified: 2023-03-30
+! Version: 1
+
+@@||csi.gstatic.com^$app=com.offerup
+@@||outlook.office365.com/owa/calendar^
+@@||us.azureauth.duosecurity.com^$domain=login.microsoftonline.com
+
+! Samsung ads
+||us-api.mcsvc.samsung.com^$app=com.sec.android.app.samsungapps
+||prd.samsungxp.net^$app=com.sec.android.app.samsungapps
+||157.185.169.252:443^$app=com.sec.android.app.samsungapps
+||firebase-settings.crashlytics.com^
+||firebaseremoteconfig.googleapis.com^$app=com.samsung.android.game.gamehome
+||ureca.samsungapps.com^$app=com.sec.android.app.samsungapps
+||prd.samsungxp.net^$app=com.sec.android.app.samsungapps
+||api.glb.samsung-gamelauncher.com^$app=com.samsung.android.game.gamehome
+||static.glb.samsung-gamelauncher.com^$app=com.samsung.android.game.gamehome
+||vas.samsungapps.com^$app=com.samsung.android.game.gamehome
+||insights-img.samsunghealth.com^$app=com.sec.android.app.shealth
+||samsungknowledge.com^
+||api.samsungknowledge.com^
+||content.samsungknowledge.com^
+||api-promo.samsungknowledge.com^
+||collector.samsungknowledge.com^
+||img.samsungapps.com^$app=com.samsung.android.game.gamehome
+||img.samsungapps.com/display^$app=com.sec.android.app.samsungapps
+||insight.samsunghealth.com^
+||analytics-api.samsunghealthcn.com^
+||shealth-analytics-api.samsunghealth.com^
+||sspapi-prd.samsungrs.com^
