@@ -1,9 +1,9 @@
-! Title: Reddit Mobile Web Popup Filter
+! Title: Reddit Mobile Web Filter
 ! Expires: 30 days
-! Description: This is to remove the "open in the reddit app" popup when clicking on a reddit link on mobile in the browser
+! Description: This removes the "open in the reddit app" popup when clicking on a reddit-mobile-web link and other cosmetic clutter in the UX
 ! Homepage: https://github.com/UTDDavid/Adblock-Filters
-! Last modified: 2023-03-29
-! Version: 1
+! Last modified: 2023-07-02
+! Version: 2
 
 ! modified source: https://www.reddit.com/r/uBlockOrigin/comments/yrtr3r/comment/ivx146u/?utm_source=share&utm_medium=web2x&context=3
 
@@ -47,3 +47,29 @@ www.reddit.com##div.XPromoPopupRpl__action:nth-of-type(2)
 i.redd.it##.theme-beta.fixed
 preview.redd.it##.theme-beta.fixed
 preview.redd.it##shreddit-async-loader
+
+! Reddit Mobile Web Comment - Give Award Button
+www.reddit.com##[aria-label="Give award"]
+
+! Reddit Mobile Web Comments/Posts - 'More from...', Hide, Report, & 'View Community Ranking' Buttons
+www.reddit.com##a.DropdownLinkRow:has-text(/^More from/)
+www.reddit.com##div.DropdownRow:has-text(Hide)
+www.reddit.com##div.DropdownRow:has-text(Report)
+www.reddit.com##a.DropdownLinkRow.DropdownLinkRow__backlink:has-text(View community ranking)
+
+! Reddit Mobile Web Subreddit About Page - 'In the Top X% of Largest communities on Reddit'
+www.reddit.com##span.CommunityHeader-description
+
+! Reddit Mobile Web Subreddit About Page - Subreddit Rules Cards
+www.reddit.com##div.SubredditRules
+www.reddit.com##div.TextArea:has-text(Spoilers)
+www.reddit.com##div.TextArea:has-text(Miscellaneous rules)
+
+! Reddit Mobile Web Hamburger Menu - Premium, Coins, r/popular, r/all, 'Help Center', 'More', & 'Terms & Policies' Buttons
+www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li:has-text(Premium)
+www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li:has-text(Coins)
+www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li:has-text(r/popular)
+www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li:has-text(r/all)
+www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li:has-text(Help Center)
+www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li:has-text(More)
+www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li:has-text(Terms & Policies)
