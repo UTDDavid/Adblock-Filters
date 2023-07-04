@@ -67,6 +67,9 @@ www.reddit.com##div.SubredditRules
 www.reddit.com##div.TextArea:has-text(Spoilers)
 www.reddit.com##div.TextArea:has-text(Miscellaneous rules)
 
+! Reddit Mobile Web Post - Banned Alert Messag
+www.reddit.com##div.alert-warning
+
 ! Reddit Mobile Web Hamburger Menu - Premium, Coins, r/popular, r/all, 'Help Center', 'More', & 'Terms & Policies' Buttons
 www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(3)
 www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(4)
