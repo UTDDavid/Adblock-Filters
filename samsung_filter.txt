@@ -33,3 +33,34 @@
 ||analytics-api.samsunghealthcn.com^
 ||shealth-analytics-api.samsunghealth.com^
 ||sspapi-prd.samsungrs.com^
+
+! NSFW
+! 2023-07-04 https://www.xvideos.com
+! xvideos mobile header - cams button
+www.xvideos.com##.btn.live-cams
+
+! xvideos mobile - banners
+www.xvideos.com##.mobile-portrait-show
+www.xvideos.com###ad-header-mobile
+
+! xvideos mobile hamburger menu - channels
+www.xvideos.com##li:nth-of-type(3) > .head__menu-line__main-menu__lvl1
+
+! xvideos mobile hamburger menu - live cams
+www.xvideos.com##li:nth-of-type(5) > .head__menu-line__main-menu__lvl1
+
+! xvideos mobile hamburger menu - games
+www.xvideos.com##li:nth-of-type(6) > .head__menu-line__main-menu__lvl1
+
+! xvideos mobile hamburger menu - dating
+www.xvideos.com##li:nth-of-type(7) > .head__menu-line__main-menu__lvl1
+
+! xvideos mobile hamburger menu - Sexual Orientation
+www.xvideos.com##li:nth-of-type(12) > .head__menu-line__main-menu__lvl1
+
+! xvideos mobile hamburger menu - country
+www.xvideos.com##li:nth-of-type(13) > .head__menu-line__main-menu__lvl1
+
+! 2023-07-04 https://spankbang.com
+! spankbang mobile header - channel carrossel
+spankbang.com##div.scroll_list:nth-of-type(1)
