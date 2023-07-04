@@ -67,3 +67,7 @@ spankbang.com##div.scroll_list:nth-of-type(1)
 
 ! spankbang mobile header - cam and offers
 spankbang.com##li.link
+
+! spankbang mobile homepage - 'Trending live models' section
+spankbang.com##h2:has-text(Trending live models)
+spankbang.com##a[href="/live"]
