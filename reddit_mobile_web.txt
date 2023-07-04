@@ -44,7 +44,6 @@ www.reddit.com##div.XPromoPopupRpl__action:nth-of-type(1)
 www.reddit.com##div.XPromoPopupRpl__action:nth-of-type(2)
 
 
-
 ! Reddit
 ! Block Login Banner for Direct Reddit Image Link
 i.redd.it##.theme-beta.fixed
@@ -55,9 +54,9 @@ preview.redd.it##shreddit-async-loader
 www.reddit.com##button[aria-label="Give award"]
 
 ! Reddit Mobile Web Comments/Posts - 'More from...', Hide, Report, & 'View Community Ranking' Buttons
-www.reddit.com##a.DropdownLinkRow:has-text(/^More from/)
-www.reddit.com##.DropdownModal > div:nth-child(2) > div.DropdownRow:has-text(Hide)
-www.reddit.com##.DropdownModal > div:nth-child(2) > div.DropdownRow:has-text(Report)
+www.reddit.com##.DropdownLinkRow > .icon-snoosilhouette:upward(.DropdownLinkRow)
+www.reddit.com##.DropdownRow > .icon-hide:upward(.DropdownRow)
+www.reddit.com##.DropdownRow > .icon-flag:upward(.DropdownRow)
 www.reddit.com##a.DropdownLinkRow.DropdownLinkRow__backlink
 
 ! Reddit Mobile Web Subreddit About Page - 'In the Top X% of Largest communities on Reddit'
