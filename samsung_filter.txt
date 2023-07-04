@@ -64,3 +64,6 @@ www.xvideos.com##li:nth-of-type(13) > .head__menu-line__main-menu__lvl1
 ! 2023-07-04 https://spankbang.com
 ! spankbang mobile header - channel carrossel
 spankbang.com##div.scroll_list:nth-of-type(1)
+
+! spankbang mobile header - cam and offers
+spankbang.com##li.link
