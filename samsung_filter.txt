@@ -79,3 +79,14 @@ m.youtube.com##.icon-flag.slim_video_action_bar_renderer_button
 ! 2023-07-04 https://subsplease.org
 ! SubsPlease - Discord Widget
 subsplease.org###discord-widget
+
+! 2023-07-04 https://imgur.com/
+! Imgur - Ad-free Button
+imgur.com##a[class="EmeraldButton Button"]
+
+! Imgur Header - Trending Tags
+imgur.com##.Message.welcome
+imgur.com##.TrendingTags
+
+! Imgur - Footer
+imgur.com##.Footer-wrapper
