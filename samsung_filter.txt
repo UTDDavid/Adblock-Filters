@@ -71,3 +71,11 @@ spankbang.com##li.link
 ! spankbang mobile homepage - 'Trending live models' section
 spankbang.com##h2:has-text(Trending live models)
 spankbang.com##a[href="/live"]
+
+! 2023-07-06 https://m.youtube.com
+! Youtube Mobile - Report Video Button
+m.youtube.com##.icon-flag.slim_video_action_bar_renderer_button
+
+! 2023-07-04 https://subsplease.org
+! SubsPlease - Discord Widget
+subsplease.org###discord-widget
