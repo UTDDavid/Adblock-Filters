@@ -74,8 +74,9 @@ www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth
 www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(13)
 www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(14)
 
-! Reddit Mobile - User Profile - Follow Button
-www.reddit.com##.UserProfileHeader__follow:remove()
+! Reddit Mobile - User Profile - Follow Button & Elippses Button
+www.reddit.com##.UserProfileHeader__follow
+www.reddit.com##.UserProfileHeader__open-modal.icon.icon-seashells
 
 ! Block Login Banner for Direct Reddit Image Link
 i.redd.it##reddit-header-small:remove()
