@@ -72,6 +72,11 @@ spankbang.com##li.link
 spankbang.com##h2:has-text(Trending live models)
 spankbang.com##a[href="/live"]
 
+! spankbang - download videos bloat
+spankbang.com##.download-list.download-promo
+spankbang.com##.tagline
+spankbang.com##.b_upload.pl2
+
 ! 2023-07-06 https://m.youtube.com
 ! Youtube Mobile - Report Video Button
 m.youtube.com##.icon-flag.slim_video_action_bar_renderer_button
