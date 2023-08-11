@@ -70,12 +70,12 @@ spankbang.com##.b_upload.pl2
 ! SpankBang - Report Button
 spankbang.com##.fl
 
-! SpankBang Homepage - Channels Carrossel 
+! SpankBang Mobile Homepage - Channels Carrossel 
 spankbang.com##[id="home"] > .scroll_list:nth-of-type(1)
 
-! Spankbang Mobile homepage - 'Trending live models' section
+! Spankbang Mobile Homepage - 'Trending live models' section
 spankbang.com##h2:has-text(Trending live models)
-spankbang.com##a.more_videos.ft-grad.ft-button[href="/live"]
+spankbang.com##a.more_videos.ft-grad.ft-button:has-text(More trending live models)
 
 ! 2023-07-06 https://m.youtube.com
 ! Youtube Mobile - Report Video Button
