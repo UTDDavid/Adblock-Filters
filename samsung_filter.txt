@@ -62,20 +62,20 @@ www.xvideos.com##li:nth-of-type(12) > .head__menu-line__main-menu__lvl1
 www.xvideos.com##li:nth-of-type(13) > .head__menu-line__main-menu__lvl1
 
 ! 2023-07-04 https://spankbang.com
-! spankbang mobile header - channel carrossel
-spankbang.com##div.scroll_list:nth-of-type(1)
-
-! spankbang mobile header - cam and offers
-spankbang.com##li.link
-
-! spankbang mobile homepage - 'Trending live models' section
-spankbang.com##h2:has-text(Trending live models)
-spankbang.com##a[href="/live"]
-
-! spankbang - download videos bloat
+! Spankbang Downloads - Bloat Spam
 spankbang.com##.download-list.download-promo
 spankbang.com##.tagline
 spankbang.com##.b_upload.pl2
+
+! SpankBang - Report Button
+spankbang.com##.fl
+
+! SpankBang Homepage - Channels Carrossel 
+spankbang.com##[id="home"] > .scroll_list:nth-of-type(1)
+
+! Spankbang Mobile homepage - 'Trending live models' section
+spankbang.com##h2:has-text(Trending live models)
+spankbang.com##a.more_videos.ft-grad.ft-button[href="/live"]
 
 ! 2023-07-06 https://m.youtube.com
 ! Youtube Mobile - Report Video Button
