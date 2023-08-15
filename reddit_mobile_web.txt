@@ -69,18 +69,17 @@ i.redd.it##main[class="flex justify-center items-center h-[calc(100vh-8rem)]"]:s
 ! i.redd.it##*:not(img):style(height: 100% !important;)
 
 ! Block Login Banner for Direct Reddit Comment Image Link
+reddit.com##^.cdn-media-page > :not(faceplate-tracker, shreddit-title, post-bottom-bar)
 reddit.com##reddit-header-small:remove()
-reddit.com##[id="adblocktest"], [id="acceptabletest"], faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector, shreddit-navtimings-collector:remove()
+reddit.com##[id="adblocktest"], [id="acceptabletest"], faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector:remove()
 reddit.com##[id="recaptcha-script"], [id="googleid-signin-script"], [id="appleid-signin-script"]:remove()
+! reddit.com##html[class]:style(overflow: hidden !important;)
 reddit.com##html[class]:style(background: black !important;)
 reddit.com##shreddit-app, .cdn-media-page, .cdn-media-page *:style(padding: 0 !important; top: 0 !important;)
-reddit.com##zoomable-img :style(height: 92vh !important;)
-! reddit.com##.cdn-media-page:style(height: 100vh !important;)
-! reddit.com##main[class="flex justify-center items-center h-[calc(100vh-8rem)]"]:style(height: 100vh !important;)
-! breaks touch scrolling on mobile (pull to refresh)
-! external-preview.redd.it##post-bottom-bar:remove()
-! external-preview.redd.it##html[class]:style(overflow: hidden !important;)
-! external-preview.redd.it##*:not(img):style(height: 100% !important;)
+reddit.com##zoomable-img :style(height: inherit !important;)
+reddit.com##main[class="flex justify-center items-center h-[calc(100vh-8rem)]"]:style(height: 91vh !important;)
+! reddit.com##post-bottom-bar:remove()
+! reddit.com##*:not(img):style(height: 100% !important;)
 
 ! Block Login Banner for Direct Reddit Image Link
 ! preview.redd.it##^.cdn-media-page > :not(faceplate-tracker, shreddit-title, post-bottom-bar)
