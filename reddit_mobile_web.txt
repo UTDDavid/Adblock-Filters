@@ -49,11 +49,6 @@ www.reddit.com##.UserProfileHeader__follow
 www.reddit.com##.UserProfileHeader__open-modal.icon.icon-seashells
 
 
-! new reddit mobile - side nav bar bloat
-www.reddit.com###popular-posts
-www.reddit.com##reddit-sidebar-nav > nav > faceplate-expandable-section-helper
-www.reddit.com##reddit-sidebar-nav > nav > nav
-
 
 ! Block Login Banner for Direct Reddit Image Link
 i.redd.it##^.cdn-media-page > :not(faceplate-tracker, shreddit-title, post-bottom-bar)
