@@ -5,36 +5,49 @@
 ! Last modified: 2023-03-30
 ! Version: 1
 
-! Misc
-@@||csi.gstatic.com^$app=com.offerup
-@@||outlook.office365.com/owa/calendar^
-@@||us.azureauth.duosecurity.com^$domain=login.microsoftonline.com
+! Allow List
+@@||releases.revanced.app^$important,app=app.revanced.manager.flutter
+@@||api.revanced.app^$important,app=app.revanced.manager.flutter
 
-! Samsung ads
+
+
+! Samsung Galaxy Store
 ||us-api.mcsvc.samsung.com^$app=com.sec.android.app.samsungapps
 ||prd.samsungxp.net^$app=com.sec.android.app.samsungapps
 ||157.185.169.252:443^$app=com.sec.android.app.samsungapps
-||firebase-settings.crashlytics.com^
-||firebaseremoteconfig.googleapis.com^$app=com.samsung.android.game.gamehome
 ||ureca.samsungapps.com^$app=com.sec.android.app.samsungapps
 ||prd.samsungxp.net^$app=com.sec.android.app.samsungapps
+||img.samsungapps.com/display^$app=com.sec.android.app.samsungapps
+||dls.di.atlas.samsung.com^$app=com.sec.android.app.samsungapps
+
+! Samsung Game Launcher
+!||vas.samsungapps.com^$app=com.samsung.android.game.gamehome (check updates)
 ||api.glb.samsung-gamelauncher.com^$app=com.samsung.android.game.gamehome
 ||static.glb.samsung-gamelauncher.com^$app=com.samsung.android.game.gamehome
-||vas.samsungapps.com^$app=com.samsung.android.game.gamehome
-||insights-img.samsunghealth.com^$app=com.sec.android.app.shealth
+||firebase-settings.crashlytics.com^$app=com.samsung.android.game.gamehome
+||firebaseremoteconfig.googleapis.com^$app=com.samsung.android.game.gamehome
+||firebaseinstallations.googleapis.com^$app=com.samsung.android.game.gamehome
+||img.samsungapps.com^$app=com.samsung.android.game.gamehome
+||142.250.114.95^$app=com.samsung.android.game.gamehome
+||gmp.samsungapps.com^$app=com.samsung.android.game.gamehome
+||sdk.pushmessage.samsung.com^$app=com.samsung.android.game.gamehome
+
+! Samsung Health
+||insights-img.samsunghealth.com^
+||insight.samsunghealth.com^
+||analytics-api.samsunghealthcn.com^
+||shealth-analytics-api.samsunghealth.com^
+
+! Samsung General Ads
 ||samsungknowledge.com^
 ||api.samsungknowledge.com^
 ||content.samsungknowledge.com^
 ||api-promo.samsungknowledge.com^
 ||collector.samsungknowledge.com^
-||img.samsungapps.com^$app=com.samsung.android.game.gamehome
-||img.samsungapps.com/display^$app=com.sec.android.app.samsungapps
-||insight.samsunghealth.com^
-||analytics-api.samsunghealthcn.com^
-||shealth-analytics-api.samsunghealth.com^
 ||sspapi-prd.samsungrs.com^
 
-! NSFW
+
+
 ! 2023-07-04 https://www.xvideos.com
 ! xvideos mobile header - cams button
 www.xvideos.com##.btn.live-cams
@@ -61,6 +74,8 @@ www.xvideos.com##li:nth-of-type(12) > .head__menu-line__main-menu__lvl1
 ! xvideos mobile hamburger menu - country
 www.xvideos.com##li:nth-of-type(13) > .head__menu-line__main-menu__lvl1
 
+
+
 ! 2023-07-04 https://spankbang.com
 ! Spankbang Downloads - Bloat Spam
 spankbang.com##.download-list.download-promo
@@ -77,13 +92,7 @@ spankbang.com##[id="home"] > .scroll_list:nth-of-type(1)
 spankbang.com##h2:has-text(Trending live models)
 spankbang.com##a.more_videos.ft-grad.ft-button:has-text(More trending live models)
 
-! 2023-07-06 https://m.youtube.com
-! Youtube Mobile - Report Video Button
-m.youtube.com##.icon-flag.slim_video_action_bar_renderer_button
 
-! 2023-07-04 https://subsplease.org
-! SubsPlease - Discord Widget
-subsplease.org###discord-widget
 
 ! 2023-07-04 https://imgur.com/
 ! Imgur - Ad-free Button
@@ -95,3 +104,16 @@ imgur.com##.TrendingTags
 
 ! Imgur - Footer
 imgur.com##.Footer-wrapper
+
+
+
+! 2023-07-06 https://m.youtube.com
+! Youtube Mobile - Report Video Button
+m.youtube.com##.icon-flag.slim_video_action_bar_renderer_button
+
+! 2023-07-04 https://subsplease.org
+! SubsPlease - Discord Widget
+subsplease.org###discord-widget
+
+
+
