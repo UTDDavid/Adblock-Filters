@@ -16,8 +16,6 @@
 ||prd.samsungxp.net^$app=com.sec.android.app.samsungapps
 ||157.185.169.252:443^$app=com.sec.android.app.samsungapps
 ||ureca.samsungapps.com^$app=com.sec.android.app.samsungapps
-||prd.samsungxp.net^$app=com.sec.android.app.samsungapps
-||img.samsungapps.com/display^$app=com.sec.android.app.samsungapps
 ||dls.di.atlas.samsung.com^$app=com.sec.android.app.samsungapps
 
 ! Samsung Game Launcher
