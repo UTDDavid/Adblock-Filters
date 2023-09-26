@@ -8,8 +8,7 @@
 ! Allow List
 @@||releases.revanced.app^$important,app=app.revanced.manager.flutter
 @@||api.revanced.app^$important,app=app.revanced.manager.flutter
-
-
+@@||jac.yahoosandbox.com
 
 ! Samsung Galaxy Store
 ||us-api.mcsvc.samsung.com^$app=com.sec.android.app.samsungapps
@@ -115,3 +114,225 @@ subsplease.org###discord-widget
 
 
 
+!-------------------- SFW --------------------!
+! 2023-07-04 https://www.artstation.com
+! Art Station Header - Banner
+! www.artstation.com##.js-discount-banner.v1.active-version.bar-pro-increase:remove()
+
+! Art Station Homepage - Subscribe Card
+www.artstation.com##.home-subscriptions
+
+! Art Station Homepage - Trending on Marketplace Card
+www.artstation.com##marketplace-products
+
+! Art Station Homepage - Featured Jobs Card
+www.artstation.com##featured-jobs
+
+! Art Station Homepage - Art Station App Card
+www.artstation.com##.mobile-apps
+
+! Art Station Homepage - Chrome Extension Card
+www.artstation.com##.chrome-store
+
+! Art Station Homepage - News Letter Card
+www.artstation.com##.newslttr
+
+! Art Station Homepage - Art Prints Card
+www.artstation.com##art-prints-carousel
+
+! 2023-07-04 https://subsplease.org
+! SubsPlease - Discord Widget
+subsplease.org###discord-widget
+
+! 2023-07-04 https://imgur.com/
+! Imgur - Ad-free Button
+imgur.com##a[class="EmeraldButton Button"]
+
+! Imgur Header - Trending Tags
+imgur.com##.Message.welcome
+imgur.com##.TrendingTags
+
+! Imgur - Footer
+imgur.com##.Footer-wrapper
+
+! 2023-07-04 https://quizlet.com
+! Quizlet - Upgrade Button
+quizlet.com##.SiteUpgradeButton
+
+! 2023-07-04 https://www.quora.com
+! Quora - Quora+ Button
+quora.com##.jDrNby.base___StyledClickWrapper-lx6eke-1.daLTSH.ClickWrapper___StyledClickWrapperBox-zoqi4f-0.qu-hover--bg--darken.qu-hover--textDecoration--none.qu-cursor--pointer.qu-textAlign--center.qu-tapHighlight--white.qu-display--inline-flex.qu-userSelect--none.qu-whiteSpace--nowrap.qu-justifyContent--center.qu-alignItems--center.qu-borderRadius--pill.qu-mx--small.qu-focus--textDecoration--none.qu-active--textDecoration--none.q-click-wrapper
+
+! Quora - Message box overlay
+quora.com##[class="q-fixed qu-bg--raised qu-display--flex qu-flexDirection--column qu-borderTopLeftRadius--small qu-borderTopRightRadius--small DesktopMessagesDock___StyledFixed-sc-1bh1698-0 hGAINi"]
+
+! Quora - can't write an answer to a question notification
+quora.com##.qu-bg--white.q-box
+
+! Quora - 'Adding comments disabled' notification
+quora.com##[class="q-flex qu-bg--gray_light qu-px--medium qu-py--small qu-alignItems--center qu-flexDirection--row"]:has-text('Adding comments disabled')
+
+
+
+! 2023-06-14 https://onedrive.live.com
+! OneDrive Sidebar - Upsell Banner & Buttons
+onedrive.live.com##.od-PremiumUpsellBanner
+onedrive.live.com##[aria-label="Get the OneDrive apps"]
+
+! OneDrive Header - Upsell Diamond Button
+onedrive.live.com###PROD_OneDrive-Web_SuiteNav_Unknown_HeaderDiamond_container
+
+! OneDrive Header - Help Button
+onedrive.live.com###O365_MainLink_Help_container
+
+! OneDrive Sidebar - High Storage Usage Upsell Banner & Buttons
+onedrive.live.com##.od-QuotaBanner-upsell
+onedrive.live.com##div.od-OverQuota-buttonArea > .ms-Button.ms-Button--primary.overQuotaPrimaryButton_484190b6.od-OverQuota-upgradeButton
+onedrive.live.com##.od-QuotaBannerWrapper-placeholder.od-QuotaBannerWrapper
+
+! OneDrive - My Files - 'For You' Section
+onedrive.live.com##div.od-ItemContent-header.od-ItemsScopeItemContent-header:nth-of-type(2)
+
+! OneDrive - Photos - 'Revisit your favorite moments...' Banner
+photos.onedrive.com##.severity-info.bolt-messagebar.notification-banner
+
+! OneDrive - Photos - 'For You' Section
+photos.onedrive.com##.overflow-auto.scrollbar-hidden.flex-noshrink.flex-row.margin-horizontal-44.padding-horizontal-4.padding-vertical-20.bolt-carousel
+photos.onedrive.com##.padding-top-32.margin-horizontal-44.padding-horizontal-4.flex-justify-between.flex-align-center.flex-row
+
+! OneDrive - Photos Sidebar - Upsell Banner & Buttons
+photos.onedrive.com##.overflow-auto.scrollbar-hidden.flex-noshrink.flex-row.margin-horizontal-44.padding-horizontal-4.padding-vertical-20.bolt-carousel
+photos.onedrive.com##.padding-top-32.margin-horizontal-44.padding-horizontal-4.flex-justify-between.flex-align-center.flex-row
+photos.onedrive.com##.margin-bottom-8.padding-top-8.flex-column
+photos.onedrive.com##.bolt-focus-treatment.subtle.enabled.bolt-icon-button.bolt-link-button.bolt-button.expanded.margin-horizontal-16.margin-bottom-16.premium-button.flex-noshrink.navigation-button
+photos.onedrive.com##.bolt-link.padding-top-4.margin-horizontal-16.font-weight-semibold.body-s
+
+! OneDrive - Up Sale Popup Ad
+onedrive.live.com###fluent-default-layer-host
+
+
+
+! 2023-06-14 https://photos.google.com
+! Google Photos - Ad Banner
+photos.google.com##.MGxLdb.cjgJMb.xurAO.SMXix
+
+! Google Photos - 'Get More Storage' Button
+photos.google.com##.GIj5nd
+
+! Google Photos - Explore Button
+photos.google.com##div.SHMIQd:nth-of-type(3) > a.oUj9s:nth-of-type(2)
+
+! Google Photos - Print Store Button
+photos.google.com##div.SHMIQd:nth-of-type(3) > a.oUj9s:nth-of-type(3)
+
+! Google Photos - support button
+photos.google.com##[aria-label="Help & Feedback"]
+
+! Google Photos - favorites section - 'Order photos' button
+photos.google.com##.HOo9Rb
+
+
+
+! 2023-06-14 https://drive.google.com
+! google drive - shared drives button
+drive.google.com##[data-tree-id="Dr"]
+
+! google drive - computers button
+drive.google.com##[data-tree-id="DriveDocl"]
+
+! google drive header - support button
+drive.google.com###lZwQje
+
+! Google Drive - Docs Extension Notification
+drive.google.com##.Oq-IoWfhc-k.cc-k
+
+
+
+! 2023-07-06 https://mail.google.com
+! gmail header - support button
+mail.google.com###lZwQje
+
+! gmail - forwarded email notification banner
+mail.google.com##.ZY
+
+! 2023-07-06 https://calendar.google.com
+! google calendar - support button
+calendar.google.com##[jsname="bMWlzf"]
+
+
+
+! 2021-01-11 https://twitch.tv
+! Twitch Header - Prime Loot Button
+www.twitch.tv##[data-target="prime-offers-icon"]
+www.twitch.tv##.top-nav__prime
+
+! Twitch Header - 'Get Bits' Button
+www.twitch.tv##[aria-label="Get Bits"]
+
+! Twitch Header - Get Ad-Free' Button
+www.twitch.tv##[aria-label="Get Ad-Free"]
+www.twitch.tv##.dtleLI.Layout-sc-1xcs6mc-0
+
+! Twitch Frontpage - Recommended Live Streamers Videos
+www.twitch.tv##.front-page-carousel
+
+! Twitch Livestream Video - Slideout Side Pannel Buttons
+www.twitch.tv##iframe[class="extension-view__iframe"]
+
+! Twitch Livestream Video - Slideout Side Pannel Buttons - prime loot
+www.twitch.tv##.tw-root--hover.extensions-dock__layout
+
+! twitch - channel videos - 'Recent highlights and uploads' carousel
+www.twitch.tv##.Layout-sc-1xcs6mc-0.dymjUL:has-text(Recent highlights and uploads):upward(.Layout-sc-1xcs6mc-0.ebndJO)
+
+! twitch - channel videos - 'Popular clips' carousel
+www.twitch.tv##.Layout-sc-1xcs6mc-0.dymjUL:has-text(Popular clips):upward(.Layout-sc-1xcs6mc-0.ebndJO)
+
+! twitch - channel videos - 'All videos' carousel
+www.twitch.tv##.Layout-sc-1xcs6mc-0.dymjUL:has-text(All videos):upward(.Layout-sc-1xcs6mc-0.ebndJO)
+
+! twitch - muted sections of video alert
+www.twitch.tv##[data-test-selector="muted-segments-alert-overlay-presentation__scroll-wrapper"]
+
+! twitch - indended for mature audience disclosure
+www.twitch.tv##.Layout-sc-1xcs6mc-0.cTBHxg.disclosure-tool.dt-attach-top-right
+
+! twitch - 'subtember' ad banner
+www.twitch.tv##.subtember-gradient
+
+
+
+! 2023-07-03 https://www.youtube.com
+! Youtube - Block Download Button
+www.youtube.com##ytd-download-button-renderer
+
+! Youtube - Block Thanks Button
+www.youtube.com##.style-scope.ytd-menu-renderer > ytd-button-renderer > yt-button-shape > button[aria-label="Thanks"]:upward(ytd-button-renderer)
+
+! Youtube - Block Clip Button
+www.youtube.com##.style-scope.ytd-menu-renderer > ytd-button-renderer > yt-button-shape > button[aria-label="Clip"]:upward(ytd-button-renderer)
+
+! YouTube Sidebar Bloat and Go Live Button
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
+www.youtube.com###footer > .ytd-guide-renderer.style-scope
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(5)
+www.youtube.com##.style-default.ytd-topbar-menu-button-renderer.style-scope
+
+! YouTube Ads
+||music.youtube.com^$csp=worker-src 'none'
+||www.youtube.com^$csp=worker-src 'none'
+youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
+youtube.com##+js(json-prune, playerResponse.adPlacements)
+youtube.com##+js(json-prune, playerResponse.playerAds)
+youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
+
+! 2023-07-13 https://www.makeuseof.com
+www.makeuseof.com##.dynamically-injected-refresh-ad-zone
+
+! 2023-07-26 https://medium.com
+medium.com##div[class="m acf acg ach"]
+
+! 2023-09-21 https://anonyig.com
+anonyig.com##.stories-row.row:style(margin-left: -28vw !important; margin-right: -28vw !important; min-width: 90vw !important; column-count: 4 !important)
