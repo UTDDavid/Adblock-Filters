@@ -4,17 +4,16 @@
 ! Homepage: https://github.com/UTDDavid/Adblock-Filters
 ! Last modified: 2023-07-02
 ! Version: 2
-
 ! modified source: https://www.reddit.com/r/uBlockOrigin/comments/yrtr3r/comment/ivx146u/?utm_source=share&utm_medium=web2x&context=3
 
-! Reddit App ad
+
+
+! Reddit Mobile App Ad
 www.reddit.com##.XPromoPopupRpl.m-active
 www.reddit.com##.TopNav__promoButton
 reddit.com##body.scroll-disabled:style(overflow: visible!important; position: static!important;)
 ! www.reddit.com##+js(rc, scroll-disabled, body, stay)
 
-
-! Reddit
 ! Reddit Mobile Web Comment - Give Award Button
 www.reddit.com##button[aria-label="Give award"]
 
@@ -35,16 +34,15 @@ www.reddit.com##div.TextArea:has-text(Miscellaneous rules)
 ! Reddit Mobile Web Post - Banned Alert Messag
 www.reddit.com##div.alert-warning
 
-! Reddit Mobile Web Hamburger Menu - Premium, Coins, r/popular, r/all, 'Help Center', 'More', & 'Terms & Policies' Buttons
+! Reddit Mobile Web Hamburger Menu - Premium, r/popular, r/all, 'Help Center', 'More', & 'Terms & Policies' Buttons
 www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(3)
-www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(4)
+www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(9)
 www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(10)
 www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(11)
 www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(12)
 www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(13)
-www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(14)
 
-! Reddit Mobile - User Profile - Follow Button & Elippses Button
+! ! Reddit Mobile - User Profile - Follow Button & Elippses Button
 www.reddit.com##.UserProfileHeader__follow
 www.reddit.com##.UserProfileHeader__open-modal.icon.icon-seashells
 
@@ -53,43 +51,64 @@ www.reddit.com##.UserProfileHeader__open-modal.icon.icon-seashells
 ! Block Login Banner for Direct Reddit Image Link
 i.redd.it##^.cdn-media-page > :not(faceplate-tracker, shreddit-title, post-bottom-bar)
 i.redd.it##reddit-header-small:remove()
-i.redd.it##[id="adblocktest"], [id="acceptabletest"], faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector:remove()
+i.redd.it##[id="adblocktest"], [id="acceptabletest"], faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector, shreddit-navtimings-collector:remove()
 i.redd.it##[id="recaptcha-script"], [id="googleid-signin-script"], [id="appleid-signin-script"]:remove()
-! i.redd.it##html[class]:style(overflow: hidden !important;)
+
 i.redd.it##html[class]:style(background: black !important;)
 i.redd.it##shreddit-app, .cdn-media-page, .cdn-media-page *:style(padding: 0 !important; top: 0 !important;)
 i.redd.it##zoomable-img :style(height: inherit !important;)
 i.redd.it##main[class="flex justify-center items-center h-[calc(100vh-8rem)]"]:style(height: 91vh !important;)
 ! i.redd.it##post-bottom-bar:remove()
+! i.redd.it##html[class]:style(overflow: hidden !important;)
 ! i.redd.it##*:not(img):style(height: 100% !important;)
 
+! Block Login Banner for Direct Reddit Image Link
+external-preview.redd.it##reddit-header-small:remove()
+external-preview.redd.it##[id="adblocktest"], [id="acceptabletest"], faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector, shreddit-navtimings-collector:remove()
+external-preview.redd.it##[id="recaptcha-script"], [id="googleid-signin-script"], [id="appleid-signin-script"]:remove()
+
+external-preview.redd.it##html[class]:style(background: black !important;)
+external-preview.redd.it##shreddit-app, .cdn-media-page, .cdn-media-page *:style(padding: 0 !important; top: 0 !important;)
+external-preview.redd.it##zoomable-img :style(height: 100vh !important;)
+external-preview.redd.it##.cdn-media-page:style(height: 100vh !important;)
+external-preview.redd.it##main[class="flex justify-center items-center h-[calc(100vh-8rem)]"]:style(height: 100vh !important;)
+! breaks touch scrolling on mobile (pull to refresh)
+! external-preview.redd.it##post-bottom-bar:remove()
+! external-preview.redd.it##html[class]:style(overflow: hidden !important;)
+! external-preview.redd.it##*:not(img):style(height: 100% !important;)
+
 ! Block Login Banner for Direct Reddit Comment Image Link
-reddit.com##^.cdn-media-page > :not(faceplate-tracker, shreddit-title, post-bottom-bar)
 reddit.com##reddit-header-small:remove()
-reddit.com##[id="adblocktest"], [id="acceptabletest"], faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector:remove()
+reddit.com##[id="adblocktest"], [id="acceptabletest"], faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector, shreddit-navtimings-collector:remove()
 reddit.com##[id="recaptcha-script"], [id="googleid-signin-script"], [id="appleid-signin-script"]:remove()
-! reddit.com##html[class]:style(overflow: hidden !important;)
+
 reddit.com##html[class]:style(background: black !important;)
 reddit.com##shreddit-app, .cdn-media-page, .cdn-media-page *:style(padding: 0 !important; top: 0 !important;)
-reddit.com##zoomable-img :style(height: inherit !important;)
-reddit.com##main[class="flex justify-center items-center h-[calc(100vh-8rem)]"]:style(height: 91vh !important;)
-! reddit.com##post-bottom-bar:remove()
-! reddit.com##*:not(img):style(height: 100% !important;)
+reddit.com##zoomable-img :style(height: 92vh !important;)
+! reddit.com##.cdn-media-page:style(height: 100vh !important;)
+! reddit.com##main[class="flex justify-center items-center h-[calc(100vh-8rem)]"]:style(height: 100vh !important;)
+! breaks touch scrolling on mobile (pull to refresh)
+! external-preview.redd.it##post-bottom-bar:remove()
+! external-preview.redd.it##html[class]:style(overflow: hidden !important;)
+! external-preview.redd.it##*:not(img):style(height: 100% !important;)
 
 ! Block Login Banner for Direct Reddit Image Link
 ! preview.redd.it##^.cdn-media-page > :not(faceplate-tracker, shreddit-title, post-bottom-bar)
 preview.redd.it##reddit-header-small:remove()
-preview.redd.it##[id="adblocktest"], [id="acceptabletest"], faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector:remove()
+preview.redd.it##[id="adblocktest"], [id="acceptabletest"], faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector, shreddit-navtimings-collector:remove()
 preview.redd.it##[id="recaptcha-script"], [id="googleid-signin-script"], [id="appleid-signin-script"]:remove()
-! preview.redd.it##html[class]:style(overflow: hidden !important;)
+
 preview.redd.it##html[class]:style(background: black !important;)
 preview.redd.it##shreddit-app, .cdn-media-page, .cdn-media-page *:style(padding: 0 !important; top: 0 !important;)
 preview.redd.it##zoomable-img :style(height: 100vh !important;)
 preview.redd.it##.cdn-media-page:style(height: 100vh !important;)
 preview.redd.it##main[class="flex justify-center items-center h-[calc(100vh-8rem)]"]:style(height: 100vh !important;)
+! breaks touch scrolling on mobile (pull to refresh)
 ! i.redd.it##post-bottom-bar:remove()
+! preview.redd.it##html[class]:style(overflow: hidden !important;)
 ! preview.redd.it##*:not(img):style(height: 100% !important;)
 
-! loading the images to a libreddit instance
+! Load images to a libreddit instance
 ! i.redd.it##+js(rpnt, script, /^.*/gms, location.href="https://libreddit.hu/img"+location.pathname, condition, STICKY_CANARY)
 ! preview.redd.it##+js(rpnt, script, /^.*/gms, location.href="https://libreddit.hu/img"+location.pathname, condition, STICKY_CANARY)
+! external-preview.redd.it##+js(rpnt, script, /^.*/gms, location.href="https://libreddit.hu/img"+location.pathname, condition, STICKY_CANARY)
