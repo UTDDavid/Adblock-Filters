@@ -61,3 +61,5 @@ www.reddit.com##faceplate-server-session, slot, shreddit-good-visit-tracker, shr
 ! www.reddit.com##html[class]:style(background: black !important;)
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > main:style(height: 100vh !important;)
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"], img[alt="CDN media"]:style(padding: 0px !important; margin: 0 !important;)
+
+
