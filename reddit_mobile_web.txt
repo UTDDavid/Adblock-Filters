@@ -53,10 +53,10 @@ www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth
 www.reddit.com##.UserProfileHeader__follow
 www.reddit.com##.UserProfileHeader__open-modal.icon.icon-seashells
 
-! Reddit Mobile Web - Block Login Banner for Direct Reddit Image Link (i.redd.it, external-preview.redd.it, preview.redd.it, reddit.com/media?url=)
-www.reddit.com/media##reddit-header-small:remove()
-www.reddit.com/media##[id="recaptcha-script"], [id="googleid-signin-script"], [id="appleid-signin-script"], navigation-indicator:remove()
-www.reddit.com/media##faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector, shreddit-navtimings-collector:remove()
-www.reddit.com/media##html[class]:style(background: black !important;)
-www.reddit.com/media##main:style(height: calc(100vh - 64px) !important;)
-www.reddit.com/media##shreddit-app, img:style(padding: 0px !important; margin: 0 !important;)
+! Reddit Mobile Web - Block Login Banner for Direct Reddit Image Link (i.redd.it, external-preview.redd.it, preview.redd.it, reddit.com/media?url=) [USES ADGUARD SYNTAX]
+[$url=||www.reddit.com/media/*]##reddit-header-small:remove()
+[$url=||www.reddit.com/media/*]##[id="recaptcha-script"], [id="googleid-signin-script"], [id="appleid-signin-script"], navigation-indicator:remove()
+[$url=||www.reddit.com/media/*]##faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector, shreddit-navtimings-collector:remove()
+[$url=||www.reddit.com/media/*]##html[class]:style(background: black !important;)
+[$url=||www.reddit.com/media/*]##main:style(height: calc(100vh - 64px) !important;)
+[$url=||www.reddit.com/media/*]##shreddit-app, img:style(padding: 0px !important; margin: 0 !important;)
