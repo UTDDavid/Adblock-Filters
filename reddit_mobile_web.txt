@@ -8,14 +8,21 @@
 
 
 
-! Reddit Mobile App Ad
-www.reddit.com##.XPromoPopupRpl.m-active
+! Reddit Mobile Web
+! Reddit Mobile Web - Nav Bar - "Use App" Button
 www.reddit.com##.TopNav__promoButton
-reddit.com##body.scroll-disabled:style(overflow: visible!important; position: static!important;)
+
+! Reddit Mobile Web - Subreddit Page - "See Reddit in..." Popup Ad
+www.reddit.com##.XPromoPopupRpl.m-active:remove()
+www.reddit.com##body.scroll-disabled:style(overflow: visible!important; position: static!important;)
 ! www.reddit.com##+js(rc, scroll-disabled, body, stay)
 
-! Reddit Mobile Web Comment - Give Award Button
-www.reddit.com##button[aria-label="Give award"]
+! Reddit Mobile Web - Home Page - "See Reddit in..." Popup Ad
+www.reddit.com##shreddit-experience-tree:remove()
+
+! Reddit Mobile Web - NSFW User Profile / NSFW Subreddit - "View this NSFW content anonymously in the Reddit app" Popup Ad
+www.reddit.com##.XPromoBlockingModalRpl
+www.reddit.com##.m-blurred:style(filter:none !important;)
 
 ! Reddit Mobile Web Comments/Posts - 'More from...', Hide, Report, & 'View Community Ranking' Buttons
 www.reddit.com##.DropdownLinkRow > .icon-snoosilhouette:upward(.DropdownLinkRow)
@@ -26,12 +33,12 @@ www.reddit.com##a.DropdownLinkRow.DropdownLinkRow__backlink
 ! Reddit Mobile Web Subreddit About Page - 'In the Top X% of Largest communities on Reddit'
 www.reddit.com##span.CommunityHeader-description
 
-! Reddit Mobile Web Subreddit About Page - Subreddit Rules Cards
+! Reddit Mobile Web - Subreddit About Page - Subreddit Rules Cards
 www.reddit.com##div.SubredditRules
 www.reddit.com##div.TextArea:has-text(Spoilers)
 www.reddit.com##div.TextArea:has-text(Miscellaneous rules)
 
-! Reddit Mobile Web Post - Banned Alert Messag
+! Reddit Mobile Web - Subreddit Post - Banned Alert Message
 www.reddit.com##div.alert-warning
 
 ! Reddit Mobile Web Hamburger Menu - Premium, r/popular, r/all, 'Help Center', 'More', & 'Terms & Policies' Buttons
@@ -42,73 +49,17 @@ www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth
 www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(12)
 www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(13)
 
-! ! Reddit Mobile - User Profile - Follow Button & Elippses Button
+! Reddit Mobile Web - User Profile - Follow Button & Elippses Button
 www.reddit.com##.UserProfileHeader__follow
 www.reddit.com##.UserProfileHeader__open-modal.icon.icon-seashells
 
 
 
-! Block Login Banner for Direct Reddit Image Link
-i.redd.it##^.cdn-media-page > :not(faceplate-tracker, shreddit-title, post-bottom-bar)
-i.redd.it##reddit-header-small:remove()
-i.redd.it##[id="adblocktest"], [id="acceptabletest"], faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector, shreddit-navtimings-collector:remove()
-i.redd.it##[id="recaptcha-script"], [id="googleid-signin-script"], [id="appleid-signin-script"]:remove()
-
-i.redd.it##html[class]:style(background: black !important;)
-i.redd.it##shreddit-app, .cdn-media-page, .cdn-media-page *:style(padding: 0 !important; top: 0 !important;)
-i.redd.it##zoomable-img :style(height: inherit !important;)
-i.redd.it##main[class="flex justify-center items-center h-[calc(100vh-8rem)]"]:style(height: 91vh !important;)
-! i.redd.it##post-bottom-bar:remove()
-! i.redd.it##html[class]:style(overflow: hidden !important;)
-! i.redd.it##*:not(img):style(height: 100% !important;)
-
-! Block Login Banner for Direct Reddit Image Link
-external-preview.redd.it##reddit-header-small:remove()
-external-preview.redd.it##[id="adblocktest"], [id="acceptabletest"], faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector, shreddit-navtimings-collector:remove()
-external-preview.redd.it##[id="recaptcha-script"], [id="googleid-signin-script"], [id="appleid-signin-script"]:remove()
-
-external-preview.redd.it##html[class]:style(background: black !important;)
-external-preview.redd.it##shreddit-app, .cdn-media-page, .cdn-media-page *:style(padding: 0 !important; top: 0 !important;)
-external-preview.redd.it##zoomable-img :style(height: 100vh !important;)
-external-preview.redd.it##.cdn-media-page:style(height: 100vh !important;)
-external-preview.redd.it##main[class="flex justify-center items-center h-[calc(100vh-8rem)]"]:style(height: 100vh !important;)
-! breaks touch scrolling on mobile (pull to refresh)
-! external-preview.redd.it##post-bottom-bar:remove()
-! external-preview.redd.it##html[class]:style(overflow: hidden !important;)
-! external-preview.redd.it##*:not(img):style(height: 100% !important;)
-
-! Block Login Banner for Direct Reddit Comment Image Link
-reddit.com##reddit-header-small:remove()
-reddit.com##[id="adblocktest"], [id="acceptabletest"], faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector, shreddit-navtimings-collector:remove()
-reddit.com##[id="recaptcha-script"], [id="googleid-signin-script"], [id="appleid-signin-script"]:remove()
-
-reddit.com##html[class]:style(background: black !important;)
-reddit.com##shreddit-app, .cdn-media-page, .cdn-media-page *:style(padding: 0 !important; top: 0 !important;)
-reddit.com##zoomable-img :style(height: 92vh !important;)
-! reddit.com##.cdn-media-page:style(height: 100vh !important;)
-! reddit.com##main[class="flex justify-center items-center h-[calc(100vh-8rem)]"]:style(height: 100vh !important;)
-! breaks touch scrolling on mobile (pull to refresh)
-! external-preview.redd.it##post-bottom-bar:remove()
-! external-preview.redd.it##html[class]:style(overflow: hidden !important;)
-! external-preview.redd.it##*:not(img):style(height: 100% !important;)
-
-! Block Login Banner for Direct Reddit Image Link
-! preview.redd.it##^.cdn-media-page > :not(faceplate-tracker, shreddit-title, post-bottom-bar)
-preview.redd.it##reddit-header-small:remove()
-preview.redd.it##[id="adblocktest"], [id="acceptabletest"], faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector, shreddit-navtimings-collector:remove()
-preview.redd.it##[id="recaptcha-script"], [id="googleid-signin-script"], [id="appleid-signin-script"]:remove()
-
-preview.redd.it##html[class]:style(background: black !important;)
-preview.redd.it##shreddit-app, .cdn-media-page, .cdn-media-page *:style(padding: 0 !important; top: 0 !important;)
-preview.redd.it##zoomable-img :style(height: 100vh !important;)
-preview.redd.it##.cdn-media-page:style(height: 100vh !important;)
-preview.redd.it##main[class="flex justify-center items-center h-[calc(100vh-8rem)]"]:style(height: 100vh !important;)
-! breaks touch scrolling on mobile (pull to refresh)
-! i.redd.it##post-bottom-bar:remove()
-! preview.redd.it##html[class]:style(overflow: hidden !important;)
-! preview.redd.it##*:not(img):style(height: 100% !important;)
-
-! Load images to a libreddit instance
-! i.redd.it##+js(rpnt, script, /^.*/gms, location.href="https://libreddit.hu/img"+location.pathname, condition, STICKY_CANARY)
-! preview.redd.it##+js(rpnt, script, /^.*/gms, location.href="https://libreddit.hu/img"+location.pathname, condition, STICKY_CANARY)
-! external-preview.redd.it##+js(rpnt, script, /^.*/gms, location.href="https://libreddit.hu/img"+location.pathname, condition, STICKY_CANARY)
+!-------------------- REDDIT --------------------!
+! Reddit - Block Login Banner for Direct Reddit Image Link (i.redd.it, external-preview.redd.it, preview.redd.it, reddit.com/media?url=)
+reddit.com##reddit-header-small:matches-path(/media):remove()
+reddit.com##[id="recaptcha-script"], [id="googleid-signin-script"], [id="appleid-signin-script"], navigation-indicator:matches-path(/media):remove()
+reddit.com##faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector, shreddit-navtimings-collector:matches-path(/media):remove()
+reddit.com##html[class]:matches-path(/media):style(background: black !important;)
+reddit.com##main:matches-path(/media):style(height: calc(100vh - 64px) !important;)
+reddit.com##shreddit-app, img:matches-path(/media):style(padding: 0px !important; margin: 0 !important;)
