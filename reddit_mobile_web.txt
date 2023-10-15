@@ -54,9 +54,10 @@ www.reddit.com##.UserProfileHeader__follow
 www.reddit.com##.UserProfileHeader__open-modal.icon.icon-seashells
 
 ! Reddit Mobile Web - Block Login Banner for Direct Reddit Image Link (i.redd.it, external-preview.redd.it, preview.redd.it, reddit.com/media?url=) [USES ADGUARD SYNTAX]
-[$url=||www.reddit.com/media/*]##reddit-header-small:remove()
-[$url=||www.reddit.com/media/*]##[id="recaptcha-script"], [id="googleid-signin-script"], [id="appleid-signin-script"], navigation-indicator:remove()
-[$url=||www.reddit.com/media/*]##faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector, shreddit-navtimings-collector:remove()
-[$url=||www.reddit.com/media/*]##html[class]:style(background: black !important;)
-[$url=||www.reddit.com/media/*]##main:style(height: calc(100vh - 64px) !important;)
-[$url=||www.reddit.com/media/*]##shreddit-app, img:style(padding: 0px !important; margin: 0 !important;)
+www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > reddit-header-small:remove()
+www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > post-bottom-bar:matches-path(/media):remove()
+www.reddit.com##[id="recaptcha-script"], [id="googleid-signin-script"], [id="appleid-signin-script"], navigation-indicator:remove()
+www.reddit.com##faceplate-server-session, slot, shreddit-good-visit-tracker, shreddit-async-loader, faceplate-perfmetric-collector, shreddit-navtimings-collector:remove()
+! www.reddit.com##html[class]:style(background: black !important;)
+www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > main:style(height: 100vh !important;)
+www.reddit.com##shreddit-app[pagetype="cdn_media_page"], img[alt="CDN media"]:style(padding: 0px !important; margin: 0 !important;)
