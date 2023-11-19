@@ -20,39 +20,6 @@ www.reddit.com##body.scroll-disabled:style(overflow: visible!important; position
 ! Reddit Mobile Web - Home Page - "See Reddit in..." Popup Ad
 www.reddit.com##shreddit-experience-tree:remove()
 
-! Reddit Mobile Web - NSFW User Profile / NSFW Subreddit - "View this NSFW content anonymously in the Reddit app" Popup Ad
-www.reddit.com##.XPromoBlockingModalRpl
-www.reddit.com##.m-blurred:style(filter:none !important;)
-
-! Reddit Mobile Web Comments/Posts - 'More from...', Hide, Report, & 'View Community Ranking' Buttons
-www.reddit.com##.DropdownLinkRow > .icon-snoosilhouette:upward(.DropdownLinkRow)
-www.reddit.com##.DropdownRow > .icon-hide:upward(.DropdownRow)
-www.reddit.com##.DropdownRow > .icon-flag:upward(.DropdownRow)
-www.reddit.com##a.DropdownLinkRow.DropdownLinkRow__backlink
-
-! Reddit Mobile Web Subreddit About Page - 'In the Top X% of Largest communities on Reddit'
-www.reddit.com##span.CommunityHeader-description
-
-! Reddit Mobile Web - Subreddit About Page - Subreddit Rules Cards
-www.reddit.com##div.SubredditRules
-www.reddit.com##div.TextArea:has-text(Spoilers)
-www.reddit.com##div.TextArea:has-text(Miscellaneous rules)
-
-! Reddit Mobile Web - Subreddit Post - Banned Alert Message
-www.reddit.com##div.alert-warning
-
-! Reddit Mobile Web Hamburger Menu - Premium, r/popular, r/all, 'Help Center', 'More', & 'Terms & Policies' Buttons
-www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(3)
-www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(9)
-www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(10)
-www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(11)
-www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(12)
-www.reddit.com##ul.OverlayMenu-ul.list-unstyled > li._26Dt6IpEyQMadkdcI_SxEy:nth-of-type(13)
-
-! Reddit Mobile Web - User Profile - Follow Button & Elippses Button
-www.reddit.com##.UserProfileHeader__follow
-www.reddit.com##.UserProfileHeader__open-modal.icon.icon-seashells
-
 ! Reddit Mobile Web - Block Login Banner for Direct Reddit Image Link (i.redd.it, external-preview.redd.it, preview.redd.it, reddit.com/media?url=) [USES ADGUARD SYNTAX]
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > reddit-header-small:remove()
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > post-bottom-bar:remove()
@@ -63,3 +30,10 @@ www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > ma
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"], img[alt="CDN media"]:style(padding: 0px !important; margin: 0 !important;)
 
 
+new.reddit.com##[class="u35lf2ynn4jHsVUwPmNU Dx3UxiK86VcfkFQVHNXNi"]:style(margin: 0 !important;)
+new.reddit.com##[class="_1npCwF50X2J7Wt82SZi6J0 "]:style(width: auto !important;)
+new.reddit.com##[class="_3obgdFz00GvpqpuX8QCsNK   "]:style(width: auto !important;)
+new.reddit.com##[data-testid="post-container"]._1oQyIsiPHYt6nx7VOmd1sz._2rszc84L136gWQrkwH6IaM.Post:style(padding: 12px 40px 0 40px !important;)
+new.reddit.com##[id="SearchDropdownContent"]:style(width: auto !important; left: 0px !important;)
+! reddit mobile web - subreddit page banner box width
+new.reddit.com##[class="_26j3FxU4jTfjqi8m96HMmI _26j3FxU4jTfjqi8m96HMmI "]
