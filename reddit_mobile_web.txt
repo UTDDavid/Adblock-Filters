@@ -113,7 +113,7 @@ new.reddit.com##[class^="_26j3FxU4jTfjqi8m96HMmI _26j3FxU4jTfjqi8m96HMmI "]:remo
 ! new.reddit mobile web - Homepage - Recommended Posts - 'Popular on reddit now'
 new.reddit.com##[data-testid="post-container"]:has-text(Popular on Reddit right now)
 
-! new.reddit mobile web - Navbar - Recommended Posts - 'Popular on reddit now'
+! new.reddit mobile web - Navbar - Advertise Button
 new.reddit.com##[aria-label="Advertise"]
 
 ! new.reddit mobile web - Profile Menu - 'Online Status' Toggle
@@ -173,6 +173,8 @@ www.reddit.com##shreddit-app[pagetype="cdn_media_page"], img[alt="CDN media"]:st
 
 
 
+
+
 !-------------------- REDDIT DESKTOP --------------------!
 ! 2023-07-03 www.reddit.com
 ! Reddit - Block Login Banner for Direct Reddit Image Link (i.redd.it, external-preview.redd.it, preview.redd.it, reddit.com/media?url=)
@@ -190,6 +192,9 @@ reddit.com##shreddit-app, zoomable-img:matches-path(/media):style(padding: 0px !
 
 ! block subreddit
 ! reddit.com##div[data-subreddit="TrueOffMyChest"]
+
+! Reddit - Subreddit notification bell popup
+reddit.com##[data-testid="subredditNotificationButton"]
 
 ! Reddit Profile Menu - Large Avatar Ad
 www.reddit.com##._1yPJhJHbop3b8ymORnDlBK
