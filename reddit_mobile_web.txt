@@ -103,7 +103,7 @@ new.reddit.com##[class="_3obgdFz00GvpqpuX8QCsNK   "]:style(width: auto !importan
 new.reddit.com##[data-testid="post-container"]._1oQyIsiPHYt6nx7VOmd1sz._2rszc84L136gWQrkwH6IaM.Post:style(padding: 12px 40px 0 40px !important;)
 
 ! new.reddit mobile web - makes Search Bar useable 
-new.reddit.com##[id="SearchDropdown"][class="_1blFGqU8stoZgWSZ8MQNpf _3jiriKeNer8y0-1r6oWIFM _2dlTXDaX9JuL0bekTwhV18 m-open"]:style(position: absolute !important; left: 0px !important; width: calc(100vw) !important; z-index: 1 !important; margin: 0px !important;)
+new.reddit.com##[id="SearchDropdown"] > [class="_1DeR7_QiQnu2UK0e2dDfYD h5AN6BnHrFmiSiSIKQbi0"]:upward(1):style(position: absolute !important; left: 0px !important; width: calc(100vw) !important; z-index: 1 !important; margin: 0px !important;)
 new.reddit.com##[id="SearchDropdownContent"]:style(width: auto !important; left: 0px !important;)
 
 ! new.reddit mobile web - fixes subreddit page banner box Extraneous width site formatting (messes with horizontal scroll)
