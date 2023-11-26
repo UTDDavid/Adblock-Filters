@@ -171,6 +171,11 @@ www.reddit.com##faceplate-server-session, slot, shreddit-good-visit-tracker, fac
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > main:style(height: 100vh !important;)
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"], img[alt="CDN media"]:style(padding: 0px !important; margin: 0 !important;)
 
+! Reddit Mobile Web - Direct Reddit Image Link (i.redd.it, external-preview.redd.it, preview.redd.it, reddit.com/media?url=) [USES ADGUARD SYNTAX]
+i.redd.it^$removeheader=request:Accept
+preview.redd.it^$removeheader=request:Accept
+external-preview.redd.it^$removeheader=request:Accept
+
 
 
 
