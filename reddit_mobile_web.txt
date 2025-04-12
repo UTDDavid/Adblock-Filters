@@ -298,3 +298,10 @@ www.reddit.com##button:has-text(hide)
 
 ! Reddit - User Profile Hover Popup
 www.reddit.com##._1sbZnfdaxhCOFVUCJ3Z75m[id$="-hover-id"]
+
+www.reddit.com##[id="profile-reddit-pro-promo"]
+www.reddit.com$removeparam=iId
+www.reddit.com$removeparam=cId
+www.reddit.com##.legal-links
+
+
