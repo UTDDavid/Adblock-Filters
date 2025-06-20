@@ -395,6 +395,7 @@ www.google.com$removeparam=hl
 duckduckgo.com##[data-testid="feedback-prompt"]
 duckduckgo.com##.footer
 duckduckgo.com##.js-header-aside.header--aside
+duckduckgo.com$removeparam=t
 
 ! startpage.com - Cluttered Search
 www.startpage.com##.blog-menu-button
