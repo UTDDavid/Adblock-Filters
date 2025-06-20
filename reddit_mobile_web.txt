@@ -44,7 +44,7 @@ www.reddit.com##[aria-label="Community information"] > div > [class="px-md text-
 www.reddit.com##[aria-label="Community information"] > div > [class="px-md text-neutral-content-weak"]>div>h2>div:has-text(/(^ Rules$)|(^(Moderators|message the moderators|Moderation Policy|Miscellaneous rules|Spoilers)$)/):upward(3)+hr
 
 ! Reddit Mobile Web - Post - Removes "More Posts you may like" Bottom Infinite Scroll
-www.reddit.com##[id="right-sidebar-container"]:remove()
+www.reddit.com##[aria-label="Related Posts Section"]:remove()
 
 ! Reddit Mobile Web - User Profile - Follow Button
 www.reddit.com##[slot="button-follow"]
