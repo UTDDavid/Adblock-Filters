@@ -358,6 +358,7 @@ www.youtube.com###button-shape > .yt-spec-button-shape-next--icon-button.yt-spec
 www.youtube.com##button[aria-label="Clip"]:upward(yt-button-view-model)
 www.youtube.com##[class="yt-core-attributed-string yt-core-attributed-string--white-space-no-wrap"]:has-text(Join):upward(2)
 m.youtube.com##[aria-label="Report"]
+www.youtube.com###clarify-box
 
 ! YouTube Sidebar Bloat
 www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
