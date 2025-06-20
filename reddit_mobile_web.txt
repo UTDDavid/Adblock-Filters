@@ -50,14 +50,17 @@ www.reddit.com##[aria-label="Related Posts Section"]:remove()
 www.reddit.com##[slot="button-follow"]
 
 ! REDDIT STYLE
-! NewNew Reddit Mobile Web - Home/Subreddit Page Post Components - set each post's background to black
+! STYLE Reddit Mobile Web - Home/Subreddit Page Post Components - set each post's background to black
 www.reddit.com##html:not(.theme-light) .theme-rpl:style(--color-neutral-background: black !important;)
 
-! NewNew Reddit Mobile Web - Body - set background to black
+! STYLE Reddit Mobile Web - Body - set background to black
 www.reddit.com##html:not(.theme-light).theme-beta:style(--color-neutral-background: black !important;)
 
-! NewNew Reddit Mobile Web - Post Separators - set background to lighter grey
+! STYLE Reddit Mobile Web - Post Separators - set background to lighter grey
 www.reddit.com##html:not(.theme-light) .theme-rpl:style(--color-neutral-border-weak: #ffffff2b !important;)
+
+! STYLE Reddit Mobile Web - Right Side Bar - set background to dark grey
+www.reddit.com##:root:not(.theme-light) .theme-rpl:style(--color-neutral-background-weak: #0e0e0e !important;)
 
 ! Reddit Mobile Web - Block Login Banner for Direct Reddit Image Link (i.redd.it, external-preview.redd.it, preview.redd.it, reddit.com/media?url=) [USES ADGUARD SYNTAX]
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > reddit-header-small:remove()
