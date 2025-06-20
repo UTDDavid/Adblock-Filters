@@ -40,8 +40,8 @@ www.reddit.com##[aria-controls="multireddits_section"]:upward(1)
 www.reddit.com##[aria-controls="multireddits_section"]:upward(2)+hr
 
 ! Reddit Mobile Web - subreddit about page
-www.reddit.com##[aria-label="Community information"] > div > [class="px-md text-neutral-content-weak"]>div>h2>div:has-text(/(^ Rules$)|(^(Moderators|message the moderators|Moderation Policy|Miscellaneous rules|Spoilers)$)/):upward(3)
-www.reddit.com##[aria-label="Community information"] > div > [class="px-md text-neutral-content-weak"]>div>h2>div:has-text(/(^ Rules$)|(^(Moderators|message the moderators|Moderation Policy|Miscellaneous rules|Spoilers)$)/):upward(3)+hr
+www.reddit.com##[aria-label="Community information"] > div > [class="px-md text-neutral-content-weak"]>div>h2>div:has-text(/(^ Rules$)|(^(Moderators|message the moderators|Moderation Policy|Miscellaneous rules|Spoilers|Installed Apps)$)/):upward(3)+hr
+www.reddit.com##[aria-label="Community information"] > div > [class="px-md text-neutral-content-weak"]>div>h2>div:has-text(/(^ Rules$)|(^(Moderators|message the moderators|Moderation Policy|Miscellaneous rules|Spoilers|Installed Apps)$)/):upward(3)
 
 ! Reddit Mobile Web - Post - Removes "More Posts you may like" Bottom Infinite Scroll
 www.reddit.com##[aria-label="Related Posts Section"]:remove()
@@ -129,21 +129,8 @@ www.reddit.com##[href="https://redditinc.com"]
 ! www.reddit.com##.border-r-neutral-border.s\:border-r-sm.border-solid.border-0.m\:block.hidden.order-first.isolate.theme-rpl.left-sidebar
 
 ! www.reddit.com - subreddit right side bar
-www.reddit.com##[class="i18n-translatable-text"]:has-text(Installed Apps):upward(3)
-www.reddit.com##[class="i18n-translatable-text"]:has-text(Installed Apps):upward(3)+hr
-www.reddit.com##[aria-label="Community information"] > .py-md > [class="px-md text-neutral-content-weak"]:has-text(/(Moderators)/)
-www.reddit.com##[aria-label="Community information"] > .py-md > [class="px-md text-neutral-content-weak"]:has-text(/(Moderators)/)+hr
-www.reddit.com##[aria-label="Community information"] > .py-md > [class="px-md text-neutral-content-weak"]:has-text(message the moderators)
-www.reddit.com##[aria-label="Community information"] > .py-md > [class="px-md text-neutral-content-weak"]:has-text(message the moderators)+hr
-www.reddit.com##[aria-label="Community information"] > .py-md > [class="px-md text-neutral-content-weak"]:has-text(Moderation Policy)
-www.reddit.com##[aria-label="Community information"] > .py-md > [class="px-md text-neutral-content-weak"]:has-text(Moderation Policy)+hr
-www.reddit.com##[aria-label="Community information"] > .py-md > [class="px-md text-neutral-content-weak"]:has-text(Rules)
-www.reddit.com##[aria-label="Community information"] > .py-md > [class="px-md text-neutral-content-weak"]:has-text(Rules)+hr
-www.reddit.com##[aria-label="Community information"] > .py-md > [class="px-md text-neutral-content-weak"]:has-text(Miscellaneous rules)
-www.reddit.com##[aria-label="Community information"] > .py-md > [class="px-md text-neutral-content-weak"]:has-text(Miscellaneous rules)+hr
-www.reddit.com##[aria-label="Community information"] > .py-md > [class="px-md text-neutral-content-weak"]:has-text(Spoilers)
-www.reddit.com##[aria-label="Community information"] > .py-md > [class="px-md text-neutral-content-weak"]:has-text(Spoilers)+hr
-www.reddit.com##dropdown-close-on-scroll[container-selector="#right-sidebar-container"]+hr
+www.reddit.com##[aria-label="Community information"] > div > [class="px-md text-neutral-content-weak"]>div>h2>div:has-text(/(^ Rules$)|(^(Moderators|message the moderators|Moderation Policy|Miscellaneous rules|Spoilers|Installed Apps)$)/):upward(3)+hr
+www.reddit.com##[aria-label="Community information"] > div > [class="px-md text-neutral-content-weak"]>div>h2>div:has-text(/(^ Rules$)|(^(Moderators|message the moderators|Moderation Policy|Miscellaneous rules|Spoilers|Installed Apps)$)/):upward(3)
 
 ! www.reddit.com - right side bar
 ! www.reddit.com##[id="right-sidebar-contents"] > aside > recent-posts
@@ -530,17 +517,3 @@ www.twitch.tv##.holiday-gradient
 
 ! twitch - 'subtember' ad banner
 www.twitch.tv##.subtember-gradient
-
-
-
-
-
-
-
-
-
-
-
-
-
-
