@@ -26,8 +26,6 @@ www.reddit.com##[id="xpromo-bottom-sheet"]
 www.reddit.com##.XPromoBlockingModalRpl
 www.reddit.com##.m-blurred:style(filter:none !important;)
 
-
-
 ! Reddit Mobile Web - profile menu drawer
 www.reddit.com##[source="user_drawer"][noun="edit_avatar"]
 www.reddit.com##[source="achievements"][noun="user_drawer"]
@@ -150,28 +148,31 @@ www.reddit.com##dropdown-close-on-scroll[container-selector="#right-sidebar-cont
 ! www.reddit.com - right side bar
 ! www.reddit.com##[id="right-sidebar-contents"] > aside > recent-posts
 
-! NewNew Reddit - create account ad
+! Reddit - create account ad
 www.reddit.com##auth-landing-experience-xpromo-cbau-wrapper:remove()
 
-! NewNew Reddit - Profile Menu - achievements menu
+! Reddit - Profile Menu - achievements menu
 www.reddit.com##[source="achievements"]
 www.reddit.com##achievements-entrypoint
 
-! NewNew Reddit - Left Side Bar - Custom Feed
+! Reddit - Left Side Bar - Custom Feed
 www.reddit.com##[aria-controls="multireddits_section"]:upward(1)
 
-! NewNew Reddit - Left Side Bar - Recent Subreddits
+! Reddit - Left Side Bar - Recent Subreddits
 www.reddit.com##reddit-recent-pages
 
-! NewNew Reddit - Left Side Bar - Divider Bar
+! Reddit - Left Side Bar - Divider Bar
 www.reddit.com##[aria-label="Primary"] > [class="w-100 my-sm border-neutral-border-weak"]:nth-of-type(2)
 
-! NewNew Reddit - Comments - User Profile Hover Card
+! Reddit - Comments - User Profile Hover Card
 www.reddit.com##[data-id="user-hover-card"] > [slot="content"]:remove()
 
-! NewNew Reddit - Comments - award button
+! Reddit - Comments - award button
 www.reddit.com##award-button.s\:block.hidden
 
+! Reddit - Comments/Post Insights
+www.reddit.com##comment-stats-coachmark
+www.reddit.com##[href^="/poststats/"]
 www.reddit.com##.legal-links
 
 ! www.reddit.com - not logged in
@@ -181,3 +182,365 @@ www.reddit.com##[aria-controls="TOPICS"]:upward(1)
 www.reddit.com##[aria-label="Popular Communities"]
 ! get app button
 www.reddit.com##[source="xpromo"]
+
+
+
+
+
+
+!-------------------- NSFW --------------------!
+! 2023-08-02 https://nhentai.net
+nhentai.net##.comment:has-text(ฏ๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎)
+nhentai.net##.comment:has-text(ก็็็็็็็็)
+
+! www.eporner.com - Removes AV1 downloads
+www.eporner.com##[class="download-av1"]
+
+! xhamster.com - Adult Disclaimer
+xhamster.com##[class="dialog-desktop-container desktop-dialog-open"]
+
+! www.erome.com - Adult Disclaimer
+www.erome.com##[id="disclaimer"]
+www.erome.com##body:style(overflow: visible !important;)
+
+! www.erome.com - banner ad
+www.erome.com##[data-role="promo-messages-wrapper"]
+
+! pornolab.net - Banner Ad
+pornolab.net###logo > table > tbody > tr > .tCenter
+
+! pornolab.net - Donation Banner Ad
+pornolab.net##.hide-for-print.ta-inf2.top-alert
+
+! pornolab.net - AD Images
+pornolab.net###page_footer
+||adblocksosal.ru/images/plab/*.gif$image
+
+! spankbang.com - Video - Report Button
+spankbang.com##.fl
+
+! spankbang.com - Video - Join Now Button
+spankbang.com##[class="join"]
+
+! spankbang.com - Homepage - "Trending Live Models" Carrossel Card
+spankbang.com##[data-testid="trending-live-models-wrapper"]
+
+! spankbang.com - Homepage - "Popular Porn GIFs" Carrossel Card
+spankbang.com##[x-data="gifPage"]
+
+! spankbang.com - Homepage - "Popular Porn Photos" Carrossel Card
+spankbang.com##[x-data="photosList('photos_home_landing_page')"]
+
+! spankbang.com - Homepage - Channel Carrossel Card
+spankbang.com##[x-data="horizontalScroller('data-channel-card', 'gap-4')"]
+
+! spankbang.com - Header Buttons - 'offers', 'shop', Live Cams', 'photos', 'gifs', 'creators', 'tv', 'channels' Buttons
+spankbang.com##[data-ga-value="offers"]
+spankbang.com##[data-ga-value="kinkly-shop"]
+spankbang.com##[data-testid="live-cam-header"]
+spankbang.com##[data-ga-value="photos"]
+spankbang.com##[data-ga-value="gifs"]
+spankbang.com##[data-ga-value="creators"]
+spankbang.com##[data-ga-value="tv"]
+spankbang.com##[data-ga-value="channels"]
+
+! www.xvideos.com - Header - 'Red Videos' Button
+www.xvideos.com##li:nth-of-type(5)
+
+! www.xvideos.com - Header - 'Live Cams' Button
+www.xvideos.com##li:nth-of-type(6)
+
+! www.xvideos.com - Header - 'Games' Button
+www.xvideos.com##li:nth-of-type(7)
+
+! www.xvideos.com - Header - 'Dating' Button
+www.xvideos.com##li:nth-of-type(8)
+
+! www.xvideos.com - Header - 'Profiles' Button
+www.xvideos.com##li:nth-of-type(9)
+
+
+
+!-------------------- SFW --------------------!
+! imgur.com - Post - Premium Upvote Button
+imgur.com##[class="GalleryVote-accoladesButton"]
+
+! imgur.com - Post - Explore More Footer
+imgur.com##[class="BottomRecirc"]
+
+! Quora - Quora+ Button
+quora.com##[class="q-click-wrapper b1l8alrs bobc9nh b1cg7ppz c1nud10e qu-active--textDecoration--none qu-focus--textDecoration--none qu-mx--small qu-borderRadius--pill qu-alignItems--center qu-justifyContent--center qu-whiteSpace--nowrap qu-userSelect--none qu-display--inline-flex qu-tapHighlight--white qu-textAlign--center qu-cursor--pointer qu-hover--textDecoration--none qu-hover--bg--darken"]
+
+! OneDrive Sidebar - Upsell Banner & Buttons
+onedrive.live.com##.od-PremiumUpsellBanner
+onedrive.live.com##[class^="storageUpsellBanner_"]
+onedrive.live.com##[aria-label="Get the OneDrive apps"]
+onedrive.live.com##.od-PremiumIntro-modal
+
+! OneDrive Header - Upsell Diamond Button
+onedrive.live.com###PROD_OneDrive-Web_SuiteNav_Unknown_HeaderDiamond_container
+
+! OneDrive Header - Help and Feedback Button
+onedrive.live.com###O365_MainLink_Help_container
+onedrive.live.com##[id="GiveFeedbackButton"]
+
+! OneDrive Sidebar - High Storage Usage Upsell Banner & Buttons
+onedrive.live.com##.od-QuotaBanner-upsell
+onedrive.live.com##div.od-OverQuota-buttonArea > .ms-Button.ms-Button--primary.overQuotaPrimaryButton_484190b6.od-OverQuota-upgradeButton
+onedrive.live.com##.od-QuotaBannerWrapper-placeholder.od-QuotaBannerWrapper
+
+! OneDrive - My Files - 'For You' Section
+onedrive.live.com##[aria-label="For You"]
+
+! Google Photos - 'Get More Storage' Button
+photos.google.com##.GIj5nd
+
+! Google Photos - Print Store Button
+photos.google.com##div.SHMIQd:nth-of-type(3) > a.oUj9s:nth-of-type(3)
+
+! Google Photos - support button
+photos.google.com##[aria-label="Help & Feedback"]
+
+! Google Photos - favorites section - 'Order photos' button
+photos.google.com##.HOo9Rb
+
+! Google Photos - Download Apps Background Splash Image
+photos.google.com##div[class="uNz2Jf"]
+photos.google.com##a[rel="noopener"]
+
+! ! Google Photos - Selected Photo Menu Item Options
+photos.google.com##[aria-label="Highlight video"]
+photos.google.com##[aria-label="Collage"]
+photos.google.com##[aria-label="Animation"]
+photos.google.com##[aria-label="Slideshow"]
+photos.google.com##[aria-label^="Loop video"]
+photos.google.com##[aria-label="Edit location"]
+photos.google.com##[aria-label="Edit date & time"]
+
+! photos.google.com - Privacy, Terms, Policy Links
+photos.google.com##.JJpMec
+
+! photos.google.com - Sidebar - Buttons
+photos.google.com##[aria-label="Updates"]
+photos.google.com##[aria-label="Places"]
+photos.google.com##[aria-label="Videos"]
+photos.google.com##[aria-label="Favorites"]
+photos.google.com##[aria-label="Documents"]
+photos.google.com##[aria-label="Expand documents list"]
+photos.google.com##[aria-label="Screenshots & recordings"]
+
+! Google Photos - Order Photos Button
+photos.google.com##.Mcdzt
+photos.google.com##.kOxQdb.G6iPcb.tB5Jxf-xl07Ob-XxIAqe-OWXEXe-oYxtQd
+
+! google drive - home button
+drive.google.com##[aria-label="Home"]:upward(2)
+
+! google drive - shared drives button
+drive.google.com##[aria-label="Shared drives"]:upward(3)
+
+! google drive - computers button
+drive.google.com##[data-tree-id="DriveDoclis"]
+
+! google drive header - support button
+drive.google.com##[data-tooltip="Support"]
+
+! Google Drive - "Get More Storage" Button
+drive.google.com##.ml-Pr-kg
+
+! gmail - header - support button
+mail.google.com###lZwQje
+
+! gmail - upgrade google one button
+mail.google.com##.I6agWe
+
+! google calendar - support button
+calendar.google.com##[jsname="bMWlzf"]
+
+! voice.google.com - "Your browser might prevent calls from ringing. Change your browser settings to allow voice.google.com to play sound."
+voice.google.com##.banner
+
+
+! Youtube - Video - Download, Thanks, Ellipses, Thanks, Join Button
+www.youtube.com##ytd-download-button-renderer
+www.youtube.com##button[aria-label="Thanks"]:upward(yt-button-view-model)
+www.youtube.com###button-shape > .yt-spec-button-shape-next--icon-button.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal.yt-spec-button-shape-next
+www.youtube.com##button[aria-label="Clip"]:upward(yt-button-view-model)
+www.youtube.com##[class="yt-core-attributed-string yt-core-attributed-string--white-space-no-wrap"]:has-text(Join):upward(2)
+m.youtube.com##[aria-label="Report"]
+
+! YouTube Sidebar Bloat
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(5)
+www.youtube.com###footer > .ytd-guide-renderer.style-scope
+
+! www.youtube.com - Homepage Feed - Games Shelf
+www.youtube.com##.ytd-rich-section-renderer.style-scope > .ytd-rich-shelf-renderer.style-scope:has-text(YouTube Playables)
+
+! YouTube - Creator
+! www.youtube.com - side pannel - "Your videos" button
+www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer.style-scope:nth-of-type(3)
+www.youtube.com##[aria-label="Create"]
+
+! youtube.com - profile overflow menu - help & send feed back button
+www.youtube.com##yt-multi-page-menu-section-renderer.ytd-multi-page-menu-renderer.style-scope:nth-of-type(5)
+
+! youtube.com - channel profile - Our members  Thank you, channel members!  carrossel
+www.youtube.com##ytd-item-section-renderer.ytd-section-list-renderer.style-scope:nth-of-type(1):has-text(Our members)
+
+! Youtube - Block view counter updating in real time
+! https://www.youtube.com/youtubei/v1/updated_metadata*
+
+! Youtube - Change Thumbnail Grid Size
+! youtube.com##ytd-rich-item-renderer:style(width: 300px !important; height: auto !important;)
+! youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 6 !important;)
+
+! google.com - remove Search URL parameter
+www.google.com$removeparam=ie
+www.google.com$removeparam=sca_upv
+www.google.com$removeparam=hl
+
+!  DuckDuckGo - Feedback Button, Search footer, Settings Button
+duckduckgo.com##[data-testid="feedback-prompt"]
+duckduckgo.com##.footer
+duckduckgo.com##.js-header-aside.header--aside
+
+! startpage.com - Cluttered Search
+www.startpage.com##.blog-menu-button
+www.startpage.com##.feedback-button
+www.startpage.com##[aria-label="footer"][role="contentinfo"]
+
+! startpage.com | remove URL parameter
+www.startpage.com$removeparam=t
+www.startpage.com$removeparam=hl
+www.startpage.com$removeparam=lui
+www.startpage.com$removeparam=language
+www.startpage.com$removeparam=abd
+
+! spotify - premium button
+open.spotify.com##[aria-label="Upgrade to Premium"]
+
+! spotify - download app button
+open.spotify.com##[data-encore-id="buttonPrimary"][href="/download"]
+
+! bunkr.su - Albumns, Alert, and AD Banner
+bunkr.*##.albums_new
+bunkrr.*##.alert_papi
+bunkr.*##.catflix
+
+! Twitter
+x.com##[aria-label="Verified Orgs"]
+x.com##[href="/settings/monetization"]
+x.com##[href^="https://ads.twitter.com/"]
+x.com##[href="/jobs"]
+x.com##[aria-label="Premium"]
+x.com##[aria-label="Grok"]
+x.com##[aria-label="Subscribe to Premium"]:upward(1)
+x.com##[aria-label="Subscribe to Premium to write your own longer posts"]:upward(1)
+x.com##[aria-label="Business"]
+x.com##[aria-label^="Subscribe to @"]
+x.com##[aria-label="Expiring soon!"]
+x.com##[data-testid="verified_profile_upsell"]
+x.com##[data-testid="verified_profile_visitor_upsell"]
+x.com##[data-testid*="super-upsell"]
+
+! www.dropbox.com - sidebar quota box
+! www.dropbox.com##[data-testid="quota-indicator-menu"]
+www.dropbox.com##.dig-6lejgs11_22-2-1.dig-6lejgsi_22-2-1.dig-6lejgsv_22-2-1.dig-6lejgsk_22-2-1.dig-6lejgss_22-2-1.dig-6lejgsq_22-2-1.dig-6lejgsp_22-2-1.dig-6lejgs0_22-2-1.dig-6lejgsc_22-2-1.dig-Text--isBold.dig-Text--color-inherit.dig-Text--size-xsmall.dig-Text--variant-label.dig-Text
+
+! www.dropbox.com - free trial, invite members, help, download desktop, upgrade gold
+www.dropbox.com##[data-uxa-log^="prompt-rightmost_global_header_slot"]
+www.dropbox.com##[data-campaigns-element-id="connected-devices-button"]
+www.dropbox.com##[data-campaigns-element-id="browse-view-invite-button"]
+! www.dropbox.com##[data-testid="learning-center-button"]
+
+! ! Jun 24, 2024 https://discord.com
+! discord.com - DMs - Nitro & Shop Buttons
+discord.com##[href="/shop"]
+discord.com##[href="/store"]
+
+! discord.com - header - help button
+discord.com##[role="button"][aria-label="Help"]
+
+! discord.com - Side Bar - Download Apps & Explore Public Servers Buttons
+discord.com##[aria-label="Download Apps"]
+discord.com##[aria-label="Discover"]
+
+! Aug 25, 2024 https://soundcloud.com
+soundcloud.com##.header__goUpsell_side_by_side_experience.header__link
+soundcloud.com##.header__proUpsell_side_by_side_experience.header__link.sc-link.creatorSubscriptionsButton
+
+! yahoo comments (easy privacy blocks this)
+@@||jac.yahoosandbox.com
+
+! SubsPlease - Discord Widget
+subsplease.org###discord-widget
+
+! stackexchange - Teams Ad
+android.stackexchange.com##.js-freemium-cta
+stackoverflow.com##.js-freemium-cta
+
+! trakt.tv - vpn ad banner
+trakt.tv###om1gYCfRiN-IGJj59JMAC-wrapper
+trakt.tv##[href="/vip"]:upward(1)
+
+trakt.tv##[class="hero-wrapper"]
+trakt.tv##[id="network-wrapper"]
+
+! Twitch Header - Prime Loot Button
+www.twitch.tv##[data-target="prime-offers-icon"]
+www.twitch.tv##.top-nav__prime
+
+! Twitch Header - 'Get Bits' Button
+www.twitch.tv##[aria-label="Get Bits"]
+
+! Twitch Header - Get Ad-Free' Button
+! www.twitch.tv##[aria-label="Get Ad-Free"]
+www.twitch.tv##.iDMNUO.InjectLayout-sc-1i43xsx-0 > .kEIAKL.ScCoreButton-sc-ocjdkq-0
+
+! Twitch Frontpage - Recommended Live Streamers Videos
+www.twitch.tv##.front-page-carousel
+
+! Twitch Livestream Video - Slideout Side Pannel Buttons - prime loot
+www.twitch.tv##[class$="extensions-dock-card"]
+! twitch - sub menu buttons
+www.twitch.tv##[aria-label="Subscribe"]
+www.twitch.tv##[aria-label="Gift a Sub"]
+www.twitch.tv##[data-a-target="manage-sub-button"]
+www.twitch.tv##[data-a-target="subscribe-button"]:remove()
+www.twitch.tv##[class*="giftExpirationCallout"]
+
+www.twitch.tv##[class*="bits-leaderboard"]:upward(5)
+www.twitch.tv##[aria-label="Expand Top Gifters Leaderboard"]:upward(3)
+www.twitch.tv##[class*="hype-train__banner"]:upward(3)
+
+! twitch - video menu clip button
+www.twitch.tv##[aria-label="Clip (alt+x)"][aria-haspopup="menu"]
+
+! twitch - muted sections of video alert
+www.twitch.tv##[data-test-selector="muted-segments-alert-overlay-presentation__scroll-wrapper"]
+
+! twitch.tv - Mature Content Warning Banner
+www.twitch.tv##[aria-label="Intended for certain audiences. May contain: Mature-rated game"]
+www.twitch.tv##[id="channel-player-disclosures"]
+
+! twitch - channel videos - holiday ad banner
+www.twitch.tv##.holiday-gradient
+
+! twitch - 'subtember' ad banner
+www.twitch.tv##.subtember-gradient
+
+
+
+
+
+
+
+
+
+
+
+
+
+
