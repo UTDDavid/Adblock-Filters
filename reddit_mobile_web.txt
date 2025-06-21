@@ -412,6 +412,8 @@ www.startpage.com$removeparam=abd
 
 ! spotify - premium button
 open.spotify.com##[aria-label="Upgrade to Premium"]
+open.spotify.com##[data-testid="premium-banner"]
+open.spotify.com##[data-testid="footer-div"]
 
 ! spotify - download app button
 open.spotify.com##[data-encore-id="buttonPrimary"][href="/download"]
