@@ -7,7 +7,6 @@
 ! modified source: https://www.reddit.com/r/uBlockOrigin/comments/yrtr3r/comment/ivx146u/?utm_source=share&utm_medium=web2x&context=3
 
 
-
 ! REDDIT MOBILE WEB
 ! Reddit Mobile Web - Navbar - "Use App" Button
 www.reddit.com##.TopNav__promoButton
@@ -62,6 +61,7 @@ www.reddit.com##html:not(.theme-light) .theme-rpl:style(--color-neutral-border-w
 ! STYLE Reddit Mobile Web - Right Side Bar - set background to dark grey
 www.reddit.com##:root:not(.theme-light) .theme-rpl:style(--color-neutral-background-weak: #0e0e0e !important;)
 
+
 ! Reddit Mobile Web - Block Login Banner for Direct Reddit Image Link (i.redd.it, external-preview.redd.it, preview.redd.it, reddit.com/media?url=) [USES ADGUARD SYNTAX]
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > reddit-header-small:remove()
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > post-bottom-bar:remove()
@@ -75,7 +75,9 @@ i.redd.it^$removeheader=request:Accept
 preview.redd.it^$removeheader=request:Accept
 external-preview.redd.it^$removeheader=request:Accept
 
-
+! www.reddit.com - AI
+www.reddit.com##[class^="search-answers-preview-section"]:remove()
+www.reddit.com##[noun="gen_guides_top"]
 
 
 
@@ -403,6 +405,9 @@ www.startpage.com##.blog-menu-button
 www.startpage.com##.feedback-button
 www.startpage.com##[aria-label="footer"][role="contentinfo"]
 
+! startpage.com sponsored links
+www.startpage.com##[data-testid="ex-cl-link"]
+
 ! startpage.com | remove URL parameter
 www.startpage.com$removeparam=t
 www.startpage.com$removeparam=hl
@@ -442,20 +447,20 @@ x.com##[data-testid="verified_profile_upsell"]
 x.com##[data-testid="verified_profile_visitor_upsell"]
 x.com##[data-testid*="super-upsell"]
 
-! www.dropbox.com - sidebar quota box
-! www.dropbox.com##[data-testid="quota-indicator-menu"]
-www.dropbox.com##.dig-6lejgs11_22-2-1.dig-6lejgsi_22-2-1.dig-6lejgsv_22-2-1.dig-6lejgsk_22-2-1.dig-6lejgss_22-2-1.dig-6lejgsq_22-2-1.dig-6lejgsp_22-2-1.dig-6lejgs0_22-2-1.dig-6lejgsc_22-2-1.dig-Text--isBold.dig-Text--color-inherit.dig-Text--size-xsmall.dig-Text--variant-label.dig-Text
-
 ! www.dropbox.com - free trial, invite members, help, download desktop, upgrade gold
 www.dropbox.com##[data-uxa-log^="prompt-rightmost_global_header_slot"]
 www.dropbox.com##[data-campaigns-element-id="connected-devices-button"]
 www.dropbox.com##[data-campaigns-element-id="browse-view-invite-button"]
 ! www.dropbox.com##[data-testid="learning-center-button"]
 
-! ! Jun 24, 2024 https://discord.com
-! discord.com - DMs - Nitro & Shop Buttons
+www.dropbox.com - space usage indicator
+! www.dropbox.com##[data-testid="quota-indicator-menu"]
+www.dropbox.com##.dig-6lejgs11_22-2-1.dig-6lejgsi_22-2-1.dig-6lejgsv_22-2-1.dig-6lejgsk_22-2-1.dig-6lejgss_22-2-1.dig-6lejgsq_22-2-1.dig-6lejgsp_22-2-1.dig-6lejgs0_22-2-1.dig-6lejgsc_22-2-1.dig-Text--isBold.dig-Text--color-inherit.dig-Text--size-xsmall.dig-Text--variant-label.dig-Text
+
+! discord.com - DMs - Nitro banner & Shop Buttons
 discord.com##[href="/shop"]
 discord.com##[href="/store"]
+discord.com##[class*="colorPremiumTier2__"]
 
 ! discord.com - header - help button
 discord.com##[role="button"][aria-label="Help"]
