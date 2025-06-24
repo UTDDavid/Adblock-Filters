@@ -488,3 +488,10 @@ www.twitch.tv##.holiday-gradient
 
 ! twitch - 'subtember' ad banner
 www.twitch.tv##.subtember-gradient
+
+! https://x.com - mobile side bar
+x.com##[href="/i/monetization"]
+x.com##[href^="https://ads.x.com/"]
+x.com##[href="/i/verified-orgs-signup"]
+x.com##[href="/i/premium_sign_up"]
+x.com##[href="/i/verified-get-verified"]
