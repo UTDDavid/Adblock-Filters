@@ -38,6 +38,52 @@ www.reddit.com##:root:not(.theme-light) .theme-rpl:style(--color-neutral-backgro
 
 
 
+! Reddit Mobile Web - Navbar - "Use App" Button
+www.reddit.com##.TopNav__promoButton
+
+! Reddit Mobile Web - Subreddit Page - "See Reddit in..." Popup Ad
+www.reddit.com##.XPromoPopupRpl.m-active:remove()
+www.reddit.com##+js(rc, scroll-disabled, body, stay)
+! www.reddit.com##body.scroll-disabled:style(overflow: visible!important; position: static!important;)
+
+! + New Reddit Mobile Web - Home Page - "See Reddit in..." Popup Ad
+www.reddit.com##shreddit-experience-tree:remove()
+www.reddit.com##[paint-group="xpromo"]:remove()
+www.reddit.com##[id="xpromo-bottom-sheet"]
+
+! Reddit Mobile Web - NSFW User Profile / NSFW Subreddit - "View this NSFW content anonymously in the Reddit app" Popup Ad
+www.reddit.com##.XPromoBlockingModalRpl
+www.reddit.com##.m-blurred:style(filter:none !important;)
+
+! Reddit Mobile Web - profile menu drawer
+www.reddit.com##[source="user_drawer"][noun="edit_avatar"]
+www.reddit.com##[source="achievements"][noun="user_drawer"]
+www.reddit.com##[source="nav"][noun="premium_menu"]
+www.reddit.com##[source="user_drawer"][noun="advertise"]:upward(1):remove()
+www.reddit.com##[source="user_drawer"][noun="try_reddit_pro"]
+www.reddit.com##[source="user_drawer"][noun="contributor_program"]
+
+! Reddit Mobile Web - left side bar
+www.reddit.com##[aria-label="Reddit resources"]
+www.reddit.com##[aria-controls="multireddits_section"]:upward(1)
+www.reddit.com##[aria-controls="multireddits_section"]:upward(2)+hr
+
+! Reddit Mobile Web - subreddit about page
+www.reddit.com##[aria-label="Community information"] > div > [class="px-md text-neutral-content-weak"]>div>h2>div:has-text(/(^ Rules$)|(^(Moderators|message the moderators|Moderation Policy|Miscellaneous rules|Spoilers|Installed Apps)$)/):upward(3)+hr
+www.reddit.com##[aria-label="Community information"] > div > [class="px-md text-neutral-content-weak"]>div>h2>div:has-text(/(^ Rules$)|(^(Moderators|message the moderators|Moderation Policy|Miscellaneous rules|Spoilers|Installed Apps)$)/):upward(3)
+
+! Reddit Mobile Web - Post - Removes "More Posts you may like" Bottom Infinite Scroll
+www.reddit.com##[aria-label="Related Posts Section"]:remove()
+
+! Reddit Mobile Web - User Profile - Follow Button
+www.reddit.com##[slot="button-follow"]
+
+! www.reddit.com - AI
+www.reddit.com##[class^="search-answers-preview-section"]:remove()
+www.reddit.com##[noun="gen_guides_top"]
+
+
+
 !-------------------- REDDIT DESKTOP --------------------!
 ! block subreddit
 ! reddit.com##div[data-subreddit="TrueOffMyChest"]
@@ -280,6 +326,7 @@ photos.google.com##[aria-label="Screenshots & recordings"]
 ! Google Photos - Order Photos Button
 photos.google.com##.Mcdzt
 photos.google.com##.kOxQdb.G6iPcb.tB5Jxf-xl07Ob-XxIAqe-OWXEXe-oYxtQd
+photos.google.com##[jsdata*="_Freeshipping_"]
 
 ! google drive - home button
 drive.google.com##[aria-label="Home"]:upward(2)
