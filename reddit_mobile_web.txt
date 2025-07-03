@@ -177,6 +177,9 @@ www.reddit.com##[aria-label="Popular Communities"]
 ! get app button
 www.reddit.com##[source="xpromo"]
 
+! www.reddit.com - search - an error occurerd banner
+www.reddit.com##alert-controller
+
 
 
 
@@ -402,6 +405,9 @@ duckduckgo.com##[data-testid="feedback-prompt"]
 duckduckgo.com##.footer
 duckduckgo.com##.js-header-aside.header--aside
 duckduckgo.com$removeparam=t
+
+! Jul 2, 2025 https://search.brave.com
+search.brave.com##footer
 
 ! startpage.com - Cluttered Search
 www.startpage.com##.blog-menu-button
