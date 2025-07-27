@@ -116,6 +116,7 @@ www.reddit.com##[source="user_drawer"][noun="edit_avatar"]
 www.reddit.com##[source="user_drawer"][noun="contributor_program"]
 www.reddit.com##[source="user_drawer"][noun="advertise"]:upward(1)
 www.reddit.com##[source="nav"][noun="premium_menu"]
+www.reddit.com##[source="earn"]
 
 ! www.reddit,com - nav bar - advertise button
 www.reddit.com###advertise-button
@@ -241,6 +242,9 @@ spankbang.com##[data-ga-value="creators"]
 spankbang.com##[data-ga-value="tv"]
 spankbang.com##[data-ga-value="channels"]
 
+! spankbang.com
+spankbang.com##.vjs-paused-banner-ad-container
+
 ! www.xvideos.com - Header - 'Red Videos' Button
 www.xvideos.com##li:nth-of-type(5)
 
@@ -330,6 +334,8 @@ photos.google.com##[aria-label="Screenshots & recordings"]
 photos.google.com##.Mcdzt
 photos.google.com##.kOxQdb.G6iPcb.tB5Jxf-xl07Ob-XxIAqe-OWXEXe-oYxtQd
 photos.google.com##[jsdata*="_Freeshipping_"]
+photos.google.com##[jsdata*="Shipping"]
+photos.google.com##[role="alert"]
 
 ! google drive - home button
 drive.google.com##[aria-label="Home"]:upward(2)
@@ -455,6 +461,15 @@ x.com##[aria-label="Expiring soon!"]
 x.com##[data-testid="verified_profile_upsell"]
 x.com##[data-testid="verified_profile_visitor_upsell"]
 x.com##[data-testid*="super-upsell"]
+x.com##[href$="/superfollows"]:upward(1)
+x.com##[aria-label="Send a tip"]
+
+! https://x.com - mobile side bar
+x.com##[href="/i/monetization"]
+x.com##[href^="https://ads.x.com/"]
+x.com##[href="/i/verified-orgs-signup"]
+x.com##[href="/i/premium_sign_up"]
+x.com##[href="/i/verified-get-verified"]
 
 ! www.dropbox.com - free trial, invite members, help, download desktop, upgrade gold
 www.dropbox.com##[data-uxa-log^="prompt-rightmost_global_header_slot"]
@@ -542,9 +557,6 @@ www.twitch.tv##.holiday-gradient
 ! twitch - 'subtember' ad banner
 www.twitch.tv##.subtember-gradient
 
-! https://x.com - mobile side bar
-x.com##[href="/i/monetization"]
-x.com##[href^="https://ads.x.com/"]
-x.com##[href="/i/verified-orgs-signup"]
-x.com##[href="/i/premium_sign_up"]
-x.com##[href="/i/verified-get-verified"]
+! mail.proton.me
+mail.proton.me##[id^="spotlight-"]
+mail.proton.me##[aria-describedby^="spotlight-"]
