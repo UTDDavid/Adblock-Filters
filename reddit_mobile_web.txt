@@ -134,6 +134,7 @@ www.reddit.com##[aria-label="Reddit resources"]
 ! www.reddit.com - left side bar
 www.reddit.com##left-nav-top-section
 www.reddit.com##[href="https://redditinc.com"]
+www.reddit.com##[noun="games_drawer"]
 ! www.reddit.com##.border-r-neutral-border.s\:border-r-sm.border-solid.border-0.m\:block.hidden.order-first.isolate.theme-rpl.left-sidebar
 
 ! www.reddit.com - subreddit right side bar
@@ -560,3 +561,12 @@ www.twitch.tv##.subtember-gradient
 ! mail.proton.me
 mail.proton.me##[id^="spotlight-"]
 mail.proton.me##[aria-describedby^="spotlight-"]
+
+! Aug 14, 2025 https://mega.nz
+mega.nz##[aria-labelledby="upgrade-to-pro-dialog-title"]
+mega.nz##[aria-label="Storage capacity warning"]
+mega.nz##[class="fm-notification-block almost-full"]
+
+www.youtube.com$removeparam=sttick=1
+
+
