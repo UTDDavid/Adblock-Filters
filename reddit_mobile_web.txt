@@ -7,7 +7,7 @@
 ! modified source: https://www.reddit.com/r/uBlockOrigin/comments/yrtr3r/comment/ivx146u/?utm_source=share&utm_medium=web2x&context=3
 
 
-! REDDIT MOBILE WEB
+! Reddit - DIRECT IMAGES
 ! ! Reddit Mobile Web - Direct Reddit Image Link (i.redd.it, external-preview.redd.it, preview.redd.it, reddit.com/media?url=) [USES ADGUARD SYNTAX]
 ! i.redd.it^$removeheader=request:Accept
 ! preview.redd.it^$removeheader=request:Accept
@@ -572,4 +572,5 @@ mail.proton.me##[aria-describedby^="spotlight-"]
 mega.nz##[aria-labelledby="upgrade-to-pro-dialog-title"]
 mega.nz##[aria-label="Storage capacity warning"]
 mega.nz##[class="fm-notification-block almost-full"]
+
 
