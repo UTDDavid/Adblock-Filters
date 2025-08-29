@@ -368,12 +368,18 @@ voice.google.com##.banner
 
 ! Youtube - Video - Download, Thanks, Ellipses, Thanks, Join Button
 www.youtube.com##ytd-download-button-renderer
-www.youtube.com##button[aria-label="Thanks"]:upward(yt-button-view-model)
-www.youtube.com###button-shape > .yt-spec-button-shape-next--icon-button.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal.yt-spec-button-shape-next
-www.youtube.com##button[aria-label="Clip"]:upward(yt-button-view-model)
-www.youtube.com##[class="yt-core-attributed-string yt-core-attributed-string--white-space-no-wrap"]:has-text(Join):upward(2)
-m.youtube.com##[aria-label="Report"]
 www.youtube.com###clarify-box
+www.youtube.com##[class="yt-core-attributed-string yt-core-attributed-string--white-space-no-wrap"]:has-text(Join):upward(2)
+
+www.youtube.com##button[aria-label="Thanks"]:upward(yt-button-view-model)
+www.youtube.com##button[aria-label="Clip"]:upward(yt-button-view-model)
+m.youtube.com##[aria-label="Report"]
+
+www.youtube.com##ytd-menu-service-item-renderer.ytd-menu-popup-renderer.style-scope:has-text(Report)
+www.youtube.com##ytd-menu-service-item-renderer.ytd-menu-popup-renderer.style-scope:has-text(Clip)
+www.youtube.com##ytd-menu-service-item-renderer.ytd-menu-popup-renderer.style-scope:has-text(Thanks)
+! Aug 22, 2025 https://www.youtube.com
+
 
 ! YouTube Sidebar Bloat
 www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
@@ -566,7 +572,4 @@ mail.proton.me##[aria-describedby^="spotlight-"]
 mega.nz##[aria-labelledby="upgrade-to-pro-dialog-title"]
 mega.nz##[aria-label="Storage capacity warning"]
 mega.nz##[class="fm-notification-block almost-full"]
-
-www.youtube.com$removeparam=sttick=1
-
 
