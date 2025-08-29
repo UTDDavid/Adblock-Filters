@@ -8,10 +8,10 @@
 
 
 ! Reddit - DIRECT IMAGES
-! ! Reddit Mobile Web - Direct Reddit Image Link (i.redd.it, external-preview.redd.it, preview.redd.it, reddit.com/media?url=) [USES ADGUARD SYNTAX]
-! i.redd.it^$removeheader=request:Accept
-! preview.redd.it^$removeheader=request:Accept
-! external-preview.redd.it^$removeheader=request:Accept
+! Reddit Mobile Web - Direct Reddit Image Link (i.redd.it, external-preview.redd.it, preview.redd.it, reddit.com/media?url=) [USES ADGUARD SYNTAX]
+i.redd.it^$removeheader=request:Accept
+preview.redd.it^$removeheader=request:Accept
+external-preview.redd.it^$removeheader=request:Accept
 
 ! Reddit Mobile Web - Block Login Banner for Direct Reddit Image Link (i.redd.it, external-preview.redd.it, preview.redd.it, reddit.com/media?url=) [USES ADGUARD SYNTAX]
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > reddit-header-small:remove()
@@ -572,5 +572,6 @@ mail.proton.me##[aria-describedby^="spotlight-"]
 mega.nz##[aria-labelledby="upgrade-to-pro-dialog-title"]
 mega.nz##[aria-label="Storage capacity warning"]
 mega.nz##[class="fm-notification-block almost-full"]
+
 
 
