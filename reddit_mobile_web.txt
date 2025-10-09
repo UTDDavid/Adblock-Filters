@@ -463,7 +463,8 @@ x.com##[aria-label="Grok"]
 x.com##[aria-label="Subscribe to Premium"]:upward(1)
 x.com##[aria-label="Subscribe to Premium to write your own longer posts"]:upward(1)
 x.com##[aria-label="Business"]
-x.com##[aria-label^="Subscribe to @"]
+x.com##[aria-label^="Subscribe to @"]:remove()
+! x.com##[data-testid="placementTracking"]:style(width: 0px; height: 0px;)
 x.com##[aria-label="Expiring soon!"]
 x.com##[data-testid="verified_profile_upsell"]
 x.com##[data-testid="verified_profile_visitor_upsell"]
@@ -575,3 +576,22 @@ mega.nz##[class="fm-notification-block almost-full"]
 
 
 
+
+
+! ! Block all service workers
+! *$csp=worker-src 'none'
+! ! Allowlist (@@) or Blacklist (||):
+! @@||chat.google.com^$csp=worker-src 'none'
+! @@||mail.google.com^$csp=worker-src 'none'
+! @@||meet.google.com^$csp=worker-src 'none'
+! @@||messages.google.com^$csp=worker-src 'none'
+! @@||outlook.office.com^$csp=worker-src 'none'
+||www.reddit.com^$csp=worker-src 'none'
+||youtube.com^$csp=worker-src 'none'
+
+! Sep 2, 2025 https://gemini.google.com
+gemini.google.com##.announcement-banner-container
+gemini.google.com##.adv-upsell
+
+! Oct 1, 2025 https://www.cambro.tv
+www.cambro.tv##[href^="https://faphouse.com/tour"]
