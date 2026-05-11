@@ -5,8 +5,6 @@
 ! Last modified: 2026-05-11
 ! Version: 3
 
-
-
 ! Samsung Health
 ||insights-img.samsunghealth.com^
 ||insight.samsunghealth.com^
@@ -83,26 +81,26 @@ www.reddit.com##[aria-label="Related Posts Section"]
 ! Reddit Mobile Web - search ai
 www.reddit.com##search-telemetry-tracker:has(>guides-subscription-handler>search-answers-response-container-streaming)
 
-! Reddit Mobile - Force Serve DIRECT IMAGES by editing headers [ADGUARD ONLY]
-i.redd.it^$removeheader=request:Accept
-preview.redd.it^$removeheader=request:Accept
-external-preview.redd.it^$removeheader=request:Accept
+! ! Reddit Mobile - Force Serve DIRECT IMAGES by editing headers [ADGUARD ONLY] doesnt work?
+! ||i.redd.it^$removeheader=request:Accept
+! ||preview.redd.it^$removeheader=request:Accept
+! ||external-preview.redd.it^$removeheader=request:Accept
 
 ! i.redd.it mobile web
-www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > reddit-header-small
+www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > reddit-header-small:remove()
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > main > img:style(margin: 0 !important;)
 
 
 !-------------------- REDDIT DESKTOP --------------------!
 
 ! Reddit - Cleans up Wrapped Image UI (i.redd.it, external-preview.redd.it, preview.redd.it, reddit.com/media?url=)
-www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > reddit-header-large
-www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > post-bottom-bar:matches-path(preview.redd.it)
-www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > div.flex-row
+www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > reddit-header-large:remove()
+www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > post-bottom-bar:matches-path(preview.redd.it):remove()
+www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > div.flex-row:remove()
 
 www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"]:style(padding: 0px !important; background: black !important;)
 www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > main:matches-path(i.redd.it):style(height: calc(100dvh - 4rem) !important;)
-www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > main:matches-path(preview.redd.it):style(height: 100vh !important;)
+www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > main:matches-path(preview.redd.it):style(height: 100dvh !important;)
 
 www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > main > zoomable-img > img:style(margin: 0 !important;)
 www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] zoomable-img.overflow-auto:style(display: grid !important;)
