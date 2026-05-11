@@ -89,6 +89,7 @@ www.reddit.com##search-telemetry-tracker:has(>guides-subscription-handler>search
 ! i.redd.it mobile web
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > reddit-header-small
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > main > img:style(margin: 0 !important;)
+www.reddit.com##[slot="open-app-button"][href^="https://reddit.onelink.me/"]
 
 
 !-------------------- REDDIT DESKTOP --------------------!
