@@ -87,25 +87,25 @@ www.reddit.com##search-telemetry-tracker:has(>guides-subscription-handler>search
 ! ||external-preview.redd.it^$removeheader=request:Accept
 
 ! i.redd.it mobile web
-www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > reddit-header-small:remove()
+www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > reddit-header-small
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > main > img:style(margin: 0 !important;)
 
 
 !-------------------- REDDIT DESKTOP --------------------!
 
 ! Reddit - Cleans up Wrapped Image UI (i.redd.it, external-preview.redd.it, preview.redd.it, reddit.com/media?url=)
-www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > reddit-header-large:remove()
-www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > post-bottom-bar:matches-path(preview.redd.it):remove()
-www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > div.flex-row:remove()
+www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > reddit-header-large
+www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > post-bottom-bar:matches-path(preview.redd.it)
+www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > div.flex-row
 
-www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"]:style(padding: 0px !important; background: black !important;)
-www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > main:matches-path(i.redd.it):style(height: calc(100dvh - 4rem) !important;)
-www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > main:matches-path(preview.redd.it):style(height: 100dvh !important;)
+www.reddit.com##shreddit-app[pagetype="cdn_media_page"]:style(padding: 0px !important; background: black !important;)
+www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > main:matches-path(i.redd.it):style(height: calc(100dvh - 4rem) !important;)
+www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > main:matches-path(preview.redd.it):style(height: 100vh !important;)
 
-www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > main > zoomable-img > img:style(margin: 0 !important;)
-www.reddit.com/media##shreddit-app[pagetype="cdn_media_page"] zoomable-img.overflow-auto:style(display: grid !important;)
+www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > main > zoomable-img > img:style(margin: 0 !important;)
+www.reddit.com##shreddit-app[pagetype="cdn_media_page"] zoomable-img.overflow-auto:style(display: grid !important;)
 ! CSS rules, a tag selector (zoomable-img) has lower "priority" than a class selector so when you click on it it applies faster than reddit
-www.reddit.com/media##faceplate-server-session, shreddit-good-visit-tracker, shreddit-seo-good-visit-tracker, faceplate-perfmetric-collector, shreddit-metrics:remove()
+www.reddit.com##faceplate-server-session, shreddit-good-visit-tracker, shreddit-seo-good-visit-tracker, faceplate-perfmetric-collector, shreddit-metrics:remove()
 
 ! Load images to a libreddit instance
 ! i.redd.it##+js(rpnt, script, /^.*/gms, location.href="https://libreddit.hu/img"+location.pathname, condition, STICKY_CANARY)
