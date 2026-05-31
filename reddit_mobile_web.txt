@@ -42,16 +42,11 @@ www.reddit.com##:root:not(.theme-light) .theme-rpl:style(--color-neutral-backgro
 
 
 !-------------------- REDDIT MOBILE --------------------!
-! modified source: https://www.reddit.com/r/uBlockOrigin/comments/yrtr3r/comment/ivx146u/?utm_source=share&utm_medium=web2x&context=3
-! Reddit Mobile Web - Subreddit Page - "See Reddit in..." Popup Ad
-! www.reddit.com##.XPromoPopupRpl.m-active:remove()
-! www.reddit.com##+js(rc, scroll-disabled, body, stay)
-! ! www.reddit.com##body.scroll-disabled:style(overflow: visible!important; position: static!important;)
-
-! + New Reddit Mobile Web - Home Page - "See Reddit in..." Popup Ad
-! www.reddit.com##shreddit-experience-tree:remove()
-! www.reddit.com##[paint-group="xpromo"]:remove()
-! www.reddit.com##[id="xpromo-bottom-sheet"]
+! Reddit Mobile Web - Home Page - "See Reddit in..." Popup Ad
+www.reddit.com##.XPromoPopupRpl.m-active
+www.reddit.com##shreddit-experience-tree
+www.reddit.com##[paint-group="xpromo"]
+www.reddit.com##[id="xpromo-bottom-sheet"]
 
 ! Reddit Mobile Web - Navbar - "Use App" Button
 www.reddit.com###xpromo-small-header
@@ -81,11 +76,6 @@ www.reddit.com##[aria-label="Related Posts Section"]
 ! Reddit Mobile Web - search ai
 www.reddit.com##search-telemetry-tracker:has(>guides-subscription-handler>search-answers-response-container-streaming)
 
-! ! Reddit Mobile - Force Serve DIRECT IMAGES by editing headers [ADGUARD ONLY] doesnt work?
-! ||i.redd.it^$removeheader=request:Accept
-! ||preview.redd.it^$removeheader=request:Accept
-! ||external-preview.redd.it^$removeheader=request:Accept
-
 ! i.redd.it mobile web
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > reddit-header-small
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > main > img:style(margin: 0 !important;)
@@ -93,7 +83,6 @@ www.reddit.com##[slot="open-app-button"][href^="https://reddit.onelink.me/"]
 
 
 !-------------------- REDDIT DESKTOP --------------------!
-
 ! Reddit - Cleans up Wrapped Image UI (i.redd.it, external-preview.redd.it, preview.redd.it, reddit.com/media?url=)
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > reddit-header-large
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > post-bottom-bar:matches-path(preview.redd.it)
@@ -107,11 +96,6 @@ www.reddit.com##shreddit-app[pagetype="cdn_media_page"] > faceplate-tracker > ma
 www.reddit.com##shreddit-app[pagetype="cdn_media_page"] zoomable-img.overflow-auto:style(display: grid !important;)
 ! CSS rules, a tag selector (zoomable-img) has lower "priority" than a class selector so when you click on it it applies faster than reddit
 www.reddit.com##faceplate-server-session, shreddit-good-visit-tracker, shreddit-seo-good-visit-tracker, faceplate-perfmetric-collector, shreddit-metrics:remove()
-
-! Load images to a libreddit instance
-! i.redd.it##+js(rpnt, script, /^.*/gms, location.href="https://libreddit.hu/img"+location.pathname, condition, STICKY_CANARY)
-! preview.redd.it##+js(rpnt, script, /^.*/gms, location.href="https://libreddit.hu/img"+location.pathname, condition, STICKY_CANARY)
-! external-preview.redd.it##+js(rpnt, script, /^.*/gms, location.href="https://libreddit.hu/img"+location.pathname, condition, STICKY_CANARY)
 
 www.reddit.com$removeparam=iId
 www.reddit.com$removeparam=cId
@@ -178,15 +162,15 @@ www.reddit.com##[id="get-app"]
 ! www.reddit.com - search - an error occurerd banner
 www.reddit.com##alert-controller
 
-
-
+www.reddit.com##[bundlename="devvit_context_actions"]:upward(1)
 
 
 
 !-------------------- NSFW --------------------!
-! 2023-08-02 https://nhentai.net
+! 2023-08-02 https://nhentai.net - login to help tags, comments
 nhentai.net##.comment:has-text(ฏ๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎)
 nhentai.net##.comment:has-text(ก็็็็็็็็)
+nhentai.net##.ts-cta:upward(1)
 
 ! www.eporner.com - Removes AV1 downloads
 www.eporner.com##[class="download-av1"]
@@ -197,38 +181,29 @@ xhamster.com##[class="dialog-desktop-container desktop-dialog-open"]
 ! www.erome.com - Adult Disclaimer
 www.erome.com##[id="disclaimer"]
 www.erome.com##body:style(overflow: visible !important;)
-
 ! www.erome.com - banner ad
 www.erome.com##[data-role="promo-messages-wrapper"]
 
 ! pornolab.net - Banner Ad
 pornolab.net###logo > table > tbody > tr > .tCenter
-
 ! pornolab.net - Donation Banner Ad
 pornolab.net##.hide-for-print.ta-inf2.top-alert
-
 ! pornolab.net - AD Images
 pornolab.net###page_footer
 ||adblocksosal.ru/images/plab/*.gif$image
 
 ! spankbang.com - Video - Report Button
 spankbang.com##.fl
-
 ! spankbang.com - Video - Join Now Button
 spankbang.com##[class="join"]
-
 ! spankbang.com - Homepage - "Trending Live Models" Carrossel Card
 spankbang.com##[data-testid="trending-live-models-wrapper"]
-
 ! spankbang.com - Homepage - "Popular Porn GIFs" Carrossel Card
 spankbang.com##[x-data="gifPage"]
-
 ! spankbang.com - Homepage - "Popular Porn Photos" Carrossel Card
 spankbang.com##[x-data="photosList('photos_home_landing_page')"]
-
 ! spankbang.com - Homepage - Channel Carrossel Card
 spankbang.com##[x-data="horizontalScroller('data-channel-card', 'gap-4')"]
-
 ! spankbang.com - Header Buttons - 'offers', 'shop', Live Cams', 'photos', 'gifs', 'creators', 'tv', 'channels' Buttons
 spankbang.com##[data-ga-value="offers"]
 spankbang.com##[data-ga-value="kinkly-shop"]
@@ -238,24 +213,26 @@ spankbang.com##[data-ga-value="gifs"]
 spankbang.com##[data-ga-value="creators"]
 spankbang.com##[data-ga-value="tv"]
 spankbang.com##[data-ga-value="channels"]
-
 ! spankbang.com
 spankbang.com##.vjs-paused-banner-ad-container
 
 ! www.xvideos.com - Header - 'Red Videos' Button
 www.xvideos.com##li:nth-of-type(5)
-
 ! www.xvideos.com - Header - 'Live Cams' Button
 www.xvideos.com##li:nth-of-type(6)
-
 ! www.xvideos.com - Header - 'Games' Button
 www.xvideos.com##li:nth-of-type(7)
-
 ! www.xvideos.com - Header - 'Dating' Button
 www.xvideos.com##li:nth-of-type(8)
-
 ! www.xvideos.com - Header - 'Profiles' Button
 www.xvideos.com##li:nth-of-type(9)
+
+videv.my.id###adblock-overlay
+xfreehd.com##video, .video-player, .vjs-tech:style(cursor: auto !important;)
+www.tabootube.xxx##.models-spot-holder.slider-spot-wrap
+
+! May 16, 2026 https://bunkr.media
+bunkr.*##[href^="https://fast-poll.com/"]:upward(1)
 
 
 
@@ -269,52 +246,39 @@ imgur.com##[class="BottomRecirc"]
 ! Quora - Quora+ Button
 quora.com##[class="q-click-wrapper b1l8alrs bobc9nh b1cg7ppz c1nud10e qu-active--textDecoration--none qu-focus--textDecoration--none qu-mx--small qu-borderRadius--pill qu-alignItems--center qu-justifyContent--center qu-whiteSpace--nowrap qu-userSelect--none qu-display--inline-flex qu-tapHighlight--white qu-textAlign--center qu-cursor--pointer qu-hover--textDecoration--none qu-hover--bg--darken"]
 
-! Twitch Header - Prime Loot Button
-www.twitch.tv##[data-target="prime-offers-icon"]
-www.twitch.tv##.top-nav__prime
-
-! Twitch Header - 'Get Bits' Button
-www.twitch.tv##.Layout-sc-1xcs6mc-0.VxLcr:has([data-a-target="top-nav-get-bits-button"]) 
-
-! ! Twitch Header - Get Ad-Free' Button
-www.twitch.tv##.Layout-sc-1xcs6mc-0.VxLcr:has([data-a-target="tw-core-button-label-text"])
-
 ! Twitch Frontpage - Recommended Live Streamers Videos
 www.twitch.tv##.front-page-carousel
 
 ! Twitch Livestream Video - Slideout Side Pannel Buttons - prime loot
 www.twitch.tv##[class$="extensions-dock-card"]
 
-! twitch - sub menu buttons
+! twitch - buttons
+www.twitch.tv##[data-target="prime-offers-icon"]
+www.twitch.tv##.top-nav__prime
 www.twitch.tv##[aria-label="Subscribe"]
 www.twitch.tv##[aria-label="Gift a Sub"]
 www.twitch.tv##[data-a-target="manage-sub-button"]
 www.twitch.tv##[data-a-target="subscribe-button"]
 www.twitch.tv##[class*="giftExpirationCallout"]
+www.twitch.tv##[data-a-target="gift-button"]
+www.twitch.tv##[data-target="channel-header-right"] .iDMNUO:has([data-a-target="top-nav-get-bits-button"])
+www.twitch.tv##.Layout-sc-1xcs6mc-0.VxLcr:has([data-a-target="top-nav-get-bits-button"]) 
+www.twitch.tv##[aria-label="Clip (alt+x)"][aria-haspopup="menu"]
+www.twitch.tv##[aria-label="Subscribe to clip"]
+www.twitch.tv##.Layout-sc-1xcs6mc-0.VxLcr:has([data-a-target="tw-core-button-label-text"])
 
 ! twitch - chat leaderboard
 www.twitch.tv##.chat-room__content>.tw-transition
 www.twitch.tv##.community-highlight:has([class^="dropsHighlight"])
 
-! twitch - video menu clip button
-www.twitch.tv##[aria-label="Clip (alt+x)"][aria-haspopup="menu"]
-
-! twitch - muted sections of video alert
-www.twitch.tv##[data-test-selector="muted-segments-alert-overlay-presentation__scroll-wrapper"]
-
-! twitch.tv - Mature Content Warning Banner
+! twitch.tv - Warning Banner
 www.twitch.tv##[aria-label="Intended for certain audiences. May contain: Mature-rated game"]
 www.twitch.tv##[id="channel-player-disclosures"]
+www.twitch.tv##[data-test-selector="muted-segments-alert-overlay-presentation__scroll-wrapper"]
 
 ! twitch - channel videos - holiday ad banner
 www.twitch.tv##.holiday-gradient
-
-! twitch - 'subtember' ad banner
 www.twitch.tv##.subtember-gradient
-
-! Dec 19, 2025 https://www.twitch.tv
-www.twitch.tv##[aria-label="Subscribe to clip"]
-www.twitch.tv##[data-a-target="gift-button"]
 
 ! OneDrive Sidebar - High Storage Usage Upsell Banner & Buttons
 onedrive.live.com##.od-QuotaBanner-upsell
@@ -326,7 +290,6 @@ photos.google.com##[data-utm-campaign="photos_storage_near_quota"]
 onedrive.live.com##[data-portal-node="true"][dir]
 onedrive.live.com##[class*="nearing"]:style(color: #479ef5 !important; border-top-color: #479ef5 !important;)
 onedrive.live.com##[class^="quotaBarIcon_"]>[data-icon-name="WarningSolid"]
-
 
 ! Google Photos - favorites section - 'Order photos' button
 photos.google.com##.HOo9Rb
@@ -364,6 +327,8 @@ photos.google.com##[jsdata*="_Freeshipping_"]
 photos.google.com##[jsdata*="Shipping"]
 photos.google.com##[aria-label="Help & Feedback"]
 photos.google.com##[aria-label="Print store"]
+photos.google.com##[jsdata*="Percent_CP"]
+photos.google.com##[jsdata*="Percent_PBCP"]
 
 ! Google Drive - home button
 drive.google.com##[id="nt:D"]
@@ -395,7 +360,6 @@ voice.google.com##.banner
 gemini.google.com##.announcement-banner-container
 gemini.google.com##.adv-upsell
 
-
 ! Youtube - Video - Download, Join Button, report, Clarify Box (wiki card e.g. moon), channel members, thanks
 www.youtube.com##ytd-download-button-renderer
 www.youtube.co##[aria-label="Join this channel"]
@@ -407,9 +371,13 @@ www.youtube.com##[aria-label="Create"]
 www.youtube.com##ytd-recognition-shelf-renderer
 www.youtube.com##button[aria-label="Join this channel"]
 www.youtube.com##ytd-menu-service-item-renderer:has(path[d^="M16.25 2A6.7 6.7 0 0012 3.509"])
+www.youtube.com##[aria-label="Thanks"]
+www.youtube.com##[aria-label="Send feedback"]
+www.youtube.com##yt-list-item-view-model:has(path[d="M19 2H5a4 4 0 00-4 4v10a4 4 0 004 4h2v1.604a1.41 1.41 0 002.095 1.232L14.2 20H19a4 4 0 004-4V6a4 4 0 00-4-4ZM5 4h14a2 2 0 012 2v10a2 2 0 01-2 2h-5.318l-.453.252L9 20.6V18H5a2 2 0 01-2-2V6a2 2 0 012-2Zm7 2a1 1 0 00-1 1v4.5a1 1 0 002 0V7a1 1 0 00-1-1Zm0 7.75a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5Z"])
+www.youtube.com##.ytp-menuitem[href="https://support.google.com/youtube/?p=report_playback"]
+www.youtube.com##.ytp-menuitem:has(path[d^="M20 10V8H17.19"])
 
 ! YouTube Sidebar Bloat
-! www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
 www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4)
 www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(5)
 www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(6)
@@ -428,6 +396,8 @@ youtube.com##yt-list-item-view-model:has(path[d^="M12 2a1 1 0 00-1 1v11.586l-4.2
 youtube.com##yt-list-item-view-model:has(path[d^="M10 3.158V7.51c-5.428"])
 
 ! www.youtube.com##yt-notification-action-renderer:has(>#toast yt-formatted-string#text:has-text(Experiencing interruptions))
+www.youtube.com###toast
+www.youtube.com##ytd-rich-section-renderer:has(a[href^="/playables"])
 
 ! Youtube - Block view counter updating in real time
 ! https://www.youtube.com/youtubei/v1/updated_metadata*
@@ -436,8 +406,13 @@ youtube.com##yt-list-item-view-model:has(path[d^="M10 3.158V7.51c-5.428"])
 ! youtube.com##ytd-rich-item-renderer:style(width: 300px !important; height: auto !important;)
 ! youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 6 !important;)
 
+! May 18, 2026 https://music.youtube.com
+music.youtube.com##ytmusic-guide-entry-renderer:has-text(/Upgrade/)
+
 support.google.com###notification-accounts__has_recovery_phone
 support.google.com###notification-local__has_recovery_phone
+! add recovery contact
+google.com##[data-hveid="CAIQAQ"]
 
 ! google.com - remove Search URL parameter
 www.google.com$removeparam=ie
@@ -507,6 +482,8 @@ x.com##[data-testid="verified_profile_visitor_upsell"]
 x.com##[data-testid*="super-upsell"]
 x.com##[aria-label="Send a tip"]
 x.com##[aria-label="New: Make videos in seconds"]
+x.com##[aria-label="Grok actions"]
+x.com##[data-testid="GrokDrawerHeader"]
 
 ! https://x.com - mobile side bar
 x.com##[href="/i/monetization"]
@@ -519,23 +496,22 @@ x.com##[href="/i/verified-get-verified"]
 www.dropbox.com##[data-uxa-log^="prompt-rightmost_global_header_slot"]
 www.dropbox.com##[data-campaigns-element-id="connected-devices-button"]
 www.dropbox.com##[data-campaigns-element-id="browse-view-invite-button"]
-! www.dropbox.com##[data-testid="learning-center-button"]
-
-www.dropbox.com - space usage indicator
-! www.dropbox.com##[data-testid="quota-indicator-menu"]
-www.dropbox.com##.dig-6lejgs11_22-2-1.dig-6lejgsi_22-2-1.dig-6lejgsv_22-2-1.dig-6lejgsk_22-2-1.dig-6lejgss_22-2-1.dig-6lejgsq_22-2-1.dig-6lejgsp_22-2-1.dig-6lejgs0_22-2-1.dig-6lejgsc_22-2-1.dig-Text--isBold.dig-Text--color-inherit.dig-Text--size-xsmall.dig-Text--variant-label.dig-Text
+www.dropbox.com##.ReactModalPortal:has([aria-labelledby="campaign-format-modal-title"])
+www.dropbox.com##[data-testid="learning-center-button"]
+www.dropbox.com##[data-testid="download-desktop-app-button"]
+www.dropbox.com##[data-uxa-log="left_nav_quota_indicator_widget_cta"]
+www.dropbox.com##[aria-label="Setup devices"]
 
 ! discord.com - DMs - Nitro banner & Shop Buttons
-discord.com##[href="/shop"]
-discord.com##[href="/store"]
-discord.com##[class*="colorPremiumTier2__"]
-
-! discord.com - header - help button
-discord.com##[role="button"][aria-label="Help"]
-
-! discord.com - Side Bar - Download Apps & Explore Public Servers Buttons
-discord.com##[aria-label="Download Apps"]
-discord.com##[aria-label="Discover"]
+discord.com##a[href="/quest-home"]
+discord.com##[class^="upsellContainer"]
+discord.com##a[href="/store"]
+discord.com##a[href="/shop"]
+! discord.com##a[href="https://support.discord.com"]
+discord.com##.layer__59d0d:has([data-mana-component="popover"])
+discord.com##.listItem__650eb:has([data-list-item-id="guildsnav___guild-discover-button"])
+discord.com##.listItem__650eb:has([data-list-item-id="guildsnav___app-download-button"])
+! discord.com##div[class^="notice"]:has-text(/Get the desktop app!/)
 
 ! Aug 25, 2024 https://soundcloud.com
 soundcloud.com##.header__goUpsell_side_by_side_experience.header__link
@@ -569,6 +545,25 @@ mega.nz##[aria-labelledby="upgrade-to-pro-dialog-title"]
 mega.nz##[aria-label="Storage capacity warning"]
 mega.nz##[class="fm-notification-block almost-full"]
 
-videv.my.id###adblock-overlay
-xfreehd.com##video, .video-player, .vjs-tech:style(cursor: auto !important;)
+! May 17, 2026 https://www.amazon.com
+www.amazon.com###rufus-ask-rufus-tooltip
+www.amazon.com##[data-card-metrics-id="universal-detail-ilm-card_DetailPage_0"]
 
+! May 19, 2026 https://wiki.ocvlpctyo.cc
+ocvlpctyo.cc##.article-bottom-apps
+ocvlpctyo.cc##[data-event="ad_click"]
+ocvlpctyo.cc###aiFloat
+wdazczxyf.com##.article-bottom-apps
+wdazczxyf.com##[data-event="ad_click"]
+wdazczxyf.com###aiFloat
+
+! May 20, 2026 https://order.ebay.com
+order.ebay.com##.vod-ads-placement
+www.ebay.com###dp-live-events-carousel
+www.ebay.com##[data-testid="x-ebay-live-banner"]
+
+! May 29, 2026 https://nhentai.net
+nhentai.net##.kurohebi-slot
+
+||secrets.ai
+||flirtify-banners.pminochinos.comages.dev
