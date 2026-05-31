@@ -548,6 +548,7 @@ mega.nz##[class="fm-notification-block almost-full"]
 ! May 17, 2026 https://www.amazon.com
 www.amazon.com###rufus-ask-rufus-tooltip
 www.amazon.com##[data-card-metrics-id="universal-detail-ilm-card_DetailPage_0"]
+www.amazon.com$removeparam=ref
 
 ! May 19, 2026 https://wiki.ocvlpctyo.cc
 ocvlpctyo.cc##.article-bottom-apps
