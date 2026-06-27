@@ -40,8 +40,39 @@ www.reddit.com##html:not(.theme-light) .theme-rpl:style(--color-neutral-border-w
 ! STYLE Reddit Mobile Web - Right Side Bar - set background to dark grey
 www.reddit.com##:root:not(.theme-light) .theme-rpl:style(--color-neutral-background-weak: #0e0e0e !important;)
 
+! STYLE Reddit Mobile Web - top header canvas - set canvas to lighter black
+www.reddit.com##:root:not(.theme-light) .theme-rpl:style(--color-neutral-background-canvas: #090808 !important;)
+
+!border-bottom-color
+
+
 
 !-------------------- REDDIT MOBILE --------------------!
+! Because you've shown interest in a similar community
+www.reddit.com##article:has([recommendation-source="responsivesimilar"])
+www.reddit.com##article:has([recommendation-source="responsivesimilar"])+hr
+
+! Suggested for you
+www.reddit.com##article:has([recommendation-source="user_to_post"])
+www.reddit.com##article:has([recommendation-source="user_to_post"])+hr
+
+! Because you've shown interest in this community
+www.reddit.com##article:has([recommendation-source="responsiveallfpr"])
+www.reddit.com##article:has([recommendation-source="responsiveallfpr"])+hr
+
+# Because you've shown interest in a similar post
+www.reddit.com##article:has([recommendation-source="responsive_post_to_post"])
+www.reddit.com##article:has([recommendation-source="responsive_post_to_post"])+hr
+
+! trending posts
+www.reddit.com##article:has([recommendation-source="trending_search_posts"])
+www.reddit.com##article:has([recommendation-source="trending_search_posts"])+hr
+
+! visited community before
+www.reddit.com##article:has([recommendation-source="good_visits_on_subreddit"])
+www.reddit.com##article:has([recommendation-source="good_visits_on_subreddit"])+hr
+
+
 ! Reddit Mobile Web - Home Page - "See Reddit in..." Popup Ad
 www.reddit.com##.XPromoPopupRpl.m-active
 www.reddit.com##shreddit-experience-tree
@@ -163,6 +194,7 @@ www.reddit.com##[id="get-app"]
 www.reddit.com##alert-controller
 
 www.reddit.com##[bundlename="devvit_context_actions"]:upward(1)
+www.reddit.com##[id="reddit-pro-promo-profile-header"]
 
 
 
@@ -171,6 +203,7 @@ www.reddit.com##[bundlename="devvit_context_actions"]:upward(1)
 nhentai.net##.comment:has-text(ฏ๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎)
 nhentai.net##.comment:has-text(ก็็็็็็็็)
 nhentai.net##.ts-cta:upward(1)
+nhentai.net##.kurohebi-slot
 
 ! www.eporner.com - Removes AV1 downloads
 www.eporner.com##[class="download-av1"]
@@ -266,6 +299,7 @@ www.twitch.tv##.Layout-sc-1xcs6mc-0.VxLcr:has([data-a-target="top-nav-get-bits-b
 www.twitch.tv##[aria-label="Clip (alt+x)"][aria-haspopup="menu"]
 www.twitch.tv##[aria-label="Subscribe to clip"]
 www.twitch.tv##.Layout-sc-1xcs6mc-0.VxLcr:has([data-a-target="tw-core-button-label-text"])
+www.twitch.tv##[aria-label="Gift sub discount promotion"]
 
 ! twitch - chat leaderboard
 www.twitch.tv##.chat-room__content>.tw-transition
@@ -283,9 +317,10 @@ www.twitch.tv##.subtember-gradient
 ! OneDrive Sidebar - High Storage Usage Upsell Banner & Buttons
 onedrive.live.com##.od-QuotaBanner-upsell
 onedrive.live.com##[class^="premiumBtnContainerResponsive"]
+onedrive.live.com##[class^="storageUpsellBanner"]
 onedrive.live.com##[class^="getMoreStorageButton"]
 onedrive.live.com##[aria-label="Get more storage"]
-photos.google.com##[data-utm-campaign="photos_storage_near_quota"]
+
 ! onedrive low storage popup first login and bar
 onedrive.live.com##[data-portal-node="true"][dir]
 onedrive.live.com##[class*="nearing"]:style(color: #479ef5 !important; border-top-color: #479ef5 !important;)
@@ -320,6 +355,7 @@ photos.google.com##[aria-label="Favorites"]
 photos.google.com##[aria-label="Documents"]
 photos.google.com##[aria-label="Expand documents list"]
 photos.google.com##[aria-label="Screenshots & recordings"]
+photos.google.com##[data-utm-campaign="photos_storage_near_quota"]
 
 ! ! Google Photos - Order Photos Button
 photos.google.com##button[aria-label="Order photos"]
@@ -329,6 +365,7 @@ photos.google.com##[aria-label="Help & Feedback"]
 photos.google.com##[aria-label="Print store"]
 photos.google.com##[jsdata*="Percent_CP"]
 photos.google.com##[jsdata*="Percent_PBCP"]
+photos.google.com##[role="alert"]:has([href="./printstore"])
 
 ! Google Drive - home button
 drive.google.com##[id="nt:D"]
@@ -448,6 +485,8 @@ www.startpage.com$removeparam=hl
 www.startpage.com$removeparam=lui
 www.startpage.com$removeparam=language
 www.startpage.com$removeparam=abd
+www.startpage.com$removeparam=fmt
+www.startpage.com$removeparam=fm
 
 !spotify mobile
 open.spotify.com##[data-testid="premium-banner"]
@@ -484,6 +523,7 @@ x.com##[aria-label="Send a tip"]
 x.com##[aria-label="New: Make videos in seconds"]
 x.com##[aria-label="Grok actions"]
 x.com##[data-testid="GrokDrawerHeader"]
+x.com##[data-testid="ScrollSnap-List"]>[role="presentation"]:has([href$="/superfollows"])
 
 ! https://x.com - mobile side bar
 x.com##[href="/i/monetization"]
@@ -512,6 +552,7 @@ discord.com##.layer__59d0d:has([data-mana-component="popover"])
 discord.com##.listItem__650eb:has([data-list-item-id="guildsnav___guild-discover-button"])
 discord.com##.listItem__650eb:has([data-list-item-id="guildsnav___app-download-button"])
 ! discord.com##div[class^="notice"]:has-text(/Get the desktop app!/)
+discord.com##div[class^="notice__"]:has(i[class*="iconApple_"])
 
 ! Aug 25, 2024 https://soundcloud.com
 soundcloud.com##.header__goUpsell_side_by_side_experience.header__link
@@ -536,9 +577,9 @@ app.trakt.tv##section.section-list-container:has([href="/social/activity?mode=me
 app.trakt.tv##.trakt-summary-contextual-content:not(:empty)
 
 ! mail.proton.me
-mail.proton.me##[id^="spotlight-"]
-mail.proton.me##[aria-describedby^="spotlight-"]
-mail.proton.me##button[class*="button-promotion"]
+proton.me##[id^="spotlight-"]
+proton.me##[aria-describedby^="spotlight-"]
+proton.me##button[class*="button-promotion"]
 
 ! Aug 14, 2025 https://mega.nz
 mega.nz##[aria-labelledby="upgrade-to-pro-dialog-title"]
@@ -563,8 +604,15 @@ order.ebay.com##.vod-ads-placement
 www.ebay.com###dp-live-events-carousel
 www.ebay.com##[data-testid="x-ebay-live-banner"]
 
-! May 29, 2026 https://nhentai.net
-nhentai.net##.kurohebi-slot
-
 ||secrets.ai
 ||flirtify-banners.pminochinos.comages.dev
+
+! Jun 3, 2026 https://www.imperia-of-hentai.net
+www.imperia-of-hentai.net##.skiptranslate
+
+! Jun 18, 2026 https://discord.com
+discord.com##[id^="chat-messages-"]:has([data-text="Deleted User"])
+discord.com##[id^="chat-messages-"]:has([class^="defaultColor__4bd52 heading-md/semibold_cf4812 defaultColor__5345c inviteDestinationExpired_"])
+
+! Jun 20, 2026 https://bunkr.cr
+bunkr.cr##body > div[style^="background: red;"]:has([href="https://balbums.st"])
