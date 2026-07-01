@@ -72,6 +72,10 @@ www.reddit.com##article:has([recommendation-source="trending_search_posts"])+hr
 www.reddit.com##article:has([recommendation-source="good_visits_on_subreddit"])
 www.reddit.com##article:has([recommendation-source="good_visits_on_subreddit"])+hr
 
+! Because you've shown interest in a similar post
+www.reddit.com##article:has([recommendation-source="biggraph_post_to_post"])
+www.reddit.com##article:has([recommendation-source="biggraph_post_to_post"])+hr
+
 
 ! Reddit Mobile Web - Home Page - "See Reddit in..." Popup Ad
 www.reddit.com##.XPromoPopupRpl.m-active
