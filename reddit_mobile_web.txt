@@ -298,12 +298,12 @@ www.twitch.tv##[data-a-target="manage-sub-button"]
 www.twitch.tv##[data-a-target="subscribe-button"]
 www.twitch.tv##[class*="giftExpirationCallout"]
 www.twitch.tv##[data-a-target="gift-button"]
-www.twitch.tv##[data-target="channel-header-right"] .iDMNUO:has([data-a-target="top-nav-get-bits-button"])
-www.twitch.tv##.Layout-sc-1xcs6mc-0.VxLcr:has([data-a-target="top-nav-get-bits-button"]) 
 www.twitch.tv##[aria-label="Clip (alt+x)"][aria-haspopup="menu"]
 www.twitch.tv##[aria-label="Subscribe to clip"]
-www.twitch.tv##.Layout-sc-1xcs6mc-0.VxLcr:has([data-a-target="tw-core-button-label-text"])
+www.twitch.tv##.Layout-sc-1xcs6mc-0.fHcEag:has([data-a-target="tw-core-button-label-text"])
+www.twitch.tv##.Layout-sc-1xcs6mc-0.fHcEag:has([data-a-target="top-nav-get-bits-button"])
 www.twitch.tv##[aria-label="Gift sub discount promotion"]
+www.twitch.tv##.Layout-sc-1xcs6mc-0.hcTowp:has([data-a-target="top-nav-get-bits-button"])
 
 ! twitch - chat leaderboard
 www.twitch.tv##.chat-room__content>.tw-transition
@@ -528,6 +528,8 @@ x.com##[aria-label="New: Make videos in seconds"]
 x.com##[aria-label="Grok actions"]
 x.com##[data-testid="GrokDrawerHeader"]
 x.com##[data-testid="ScrollSnap-List"]>[role="presentation"]:has([href$="/superfollows"])
+@@||x.com/*/viewer_context.json$xhr,domain=x.com
+
 
 ! https://x.com - mobile side bar
 x.com##[href="/i/monetization"]
@@ -620,3 +622,8 @@ discord.com##[id^="chat-messages-"]:has([class^="defaultColor__4bd52 heading-md/
 
 ! Jun 20, 2026 https://bunkr.cr
 bunkr.cr##body > div[style^="background: red;"]:has([href="https://balbums.st"])
+
+! Jul 8, 2026 https://www.ptorrents.com
+www.ptorrents.com##[class="image-wrapper"]:not(:has-text(VR))
+www.ptorrents.com##[class="image-wrapper"]:has-text([Trans])
+
