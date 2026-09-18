@@ -529,14 +529,18 @@ x.com##[aria-label="Grok actions"]
 x.com##[data-testid="GrokDrawerHeader"]
 x.com##[data-testid="ScrollSnap-List"]>[role="presentation"]:has([href$="/superfollows"])
 
-
-
 ! https://x.com - mobile side bar
 x.com##[href="/i/monetization"]
 x.com##[href^="https://ads.x.com/"]
 x.com##[href="/i/verified-orgs-signup"]
 x.com##[href="/i/premium_sign_up"]
 x.com##[href="/i/verified-get-verified"]
+
+! https://x.com - Twitter/X - Restore profile redesign layout (Media Tab)
+x.com##+js(set, __INITIAL_STATE__.featureSwitch.defaultConfig.responsive_web_profile_redesign_enabled.value, false)
+x.com##+js(set, __INITIAL_STATE__.featureSwitch.user.config.responsive_web_profile_redesign_enabled.value, false)
+x.com##+js(set, __INITIAL_STATE__.featureSwitch.defaultConfig.rweb_media_carousel_enabled.value, false)
+x.com##+js(set, __INITIAL_STATE__.featureSwitch.user.config.rweb_media_carousel_enabled.value, false)
 
 ! www.dropbox.com - free trial, invite members, help, download desktop, upgrade gold
 www.dropbox.com##[data-uxa-log^="prompt-rightmost_global_header_slot"]
