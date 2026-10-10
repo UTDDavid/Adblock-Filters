@@ -134,6 +134,8 @@ www.reddit.com##faceplate-server-session, shreddit-good-visit-tracker, shreddit-
 
 www.reddit.com$removeparam=iId
 www.reddit.com$removeparam=cId
+www.reddit.com$removeparam=screen_view_count
+www.reddit.com$removeparam=ext-referrer
 
 ! www.reddit.com - Left Side Bar - recent and communities collapsable button closed - redundant now?
 ! reddit.com###recent-communities-section:remove-attr(open)
@@ -440,6 +442,8 @@ youtube.com##yt-list-item-view-model:has(path[d^="M10 3.158V7.51c-5.428"])
 www.youtube.com###toast
 www.youtube.com##ytd-rich-section-renderer:has(a[href^="/playables"])
 
+m.youtube.com$removeparam=pp
+
 ! Youtube - Block view counter updating in real time
 ! https://www.youtube.com/youtubei/v1/updated_metadata*
 
@@ -452,6 +456,7 @@ music.youtube.com##ytmusic-guide-entry-renderer:has-text(/Upgrade/)
 
 support.google.com###notification-accounts__has_recovery_phone
 support.google.com###notification-local__has_recovery_phone
+
 ! add recovery contact
 google.com##[data-hveid="CAIQAQ"]
 
@@ -542,6 +547,20 @@ x.com##+js(set, __INITIAL_STATE__.featureSwitch.user.config.responsive_web_profi
 x.com##+js(set, __INITIAL_STATE__.featureSwitch.defaultConfig.rweb_media_carousel_enabled.value, false)
 x.com##+js(set, __INITIAL_STATE__.featureSwitch.user.config.rweb_media_carousel_enabled.value, false)
 
+! https://x.com - Twitter/X - disable age verification
+x.com##+js(set, __INITIAL_STATE__.featureSwitch.defaultConfig.rweb_age_assurance_flow_enabled.value, false)
+x.com##+js(set, __INITIAL_STATE__.featureSwitch.user.config.rweb_age_assurance_flow_enabled.value, false)
+
+
+
+! ! Remove blur filter on sensitive images/videos
+! x.com##div[aria-label="Sensitive content"] > div:first-child:style(filter: none !important;)
+! x.com##div[data-testid="tweetPhoto"] div[style*="blur"]:style(filter: none !important;)
+! x.com##div[data-testid="videoPlayer"] div[style*="blur"]:style(filter: none !important;)
+
+! ! Hide the "The following media includes sensitive content" overlay warning
+! x.com##div[aria-label="Sensitive content"] > div:last-child
+
 ! www.dropbox.com - free trial, invite members, help, download desktop, upgrade gold
 www.dropbox.com##[data-uxa-log^="prompt-rightmost_global_header_slot"]
 www.dropbox.com##[data-campaigns-element-id="connected-devices-button"]
@@ -630,4 +649,3 @@ bunkr.cr##body > div[style^="background: red;"]:has([href="https://balbums.st"])
 ! Jul 8, 2026 https://www.ptorrents.com
 www.ptorrents.com##[class="image-wrapper"]:not(:has-text(VR))
 www.ptorrents.com##[class="image-wrapper"]:has-text([Trans])
-
